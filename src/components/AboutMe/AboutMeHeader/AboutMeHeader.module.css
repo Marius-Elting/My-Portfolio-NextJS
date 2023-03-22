@@ -1,0 +1,147 @@
+#AboutMeHeaderWrapper {
+    margin: var(--main-wrapper-margin);
+    padding: var(--main-wrapper-padding);
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 15vh;
+    justify-content: space-between;
+    color: var(--text-color)
+}
+
+#AboutMeHeaderWrapper article {
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--background-color-one);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--background-color-five);
+}
+
+#AboutMeHeaderLeftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#AboutMeHeaderRightContainer {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+#AboutMeHeaderInfoWrapperOne {
+    margin: 1rem;
+    width: 700px;
+}
+
+#AboutMeHeaderInfoWrapperTwo {
+    margin: 1rem;
+    width: 600px;
+    /* margin: 0 0 0 auto */
+    align-self: flex-end;
+}
+
+#AboutMeHeaderWrapper h1 {
+    font-size: calc(var(--p-font-size)*5)
+}
+
+
+
+
+
+
+
+.seeMore {
+    color: var(--text-color);
+    font-family: Poppins-Bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    white-space: nowrap;
+}
+
+.seeMore::before {
+    content: "See more..."
+}
+
+.seeMore:checked::before {
+    content: "See less..."
+}
+
+.AboutMeHeaderDetailText:has(+ .seeMore:checked) {
+    height: none;
+    display: block
+}
+
+.AboutMeHeaderDetailText {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+@media only screen and (max-width: 900px) {
+    #AboutMeHeaderWrapper {
+        flex-direction: column;
+    }
+
+    #AboutMeHeaderLeftContainer {
+        width: 100%;
+        padding: 0 2vw;
+    }
+
+    #AboutMeHeaderRightContainer {
+        align-items: center;
+        padding: 2vw;
+        width: 100%;
+        height: auto;
+    }
+
+    #AboutMeHeaderInfoWrapperTwo,
+    #AboutMeHeaderInfoWrapperOne {
+        width: 95%;
+        align-self: start;
+        font-size: calc(var(--p-font-size)*1.2);
+    }
+
+    .seeMore::before {
+        content: "See more...";
+        font-size: calc(var(--p-font-size)*1.2);
+
+    }
+
+    .seeMore:checked::before {
+        content: "See less...";
+        font-size: calc(var(--p-font-size)*1.2);
+    }
+
+    #AboutMeHeaderRightContainer a {
+        font-size: calc(var(--a-font-size)*1.5);
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    #AboutMeHeaderInfoWrapperTwo,
+    #AboutMeHeaderInfoWrapperOne {
+        width: 90%;
+        align-self: start;
+        font-size: calc(var(--p-font-size)*1.2);
+    }
+}
+
+
+@media only screen and (max-width: 1150px) {
+    #AboutMeHeaderWrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+}

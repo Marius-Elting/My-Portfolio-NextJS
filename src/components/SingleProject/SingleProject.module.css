@@ -1,0 +1,129 @@
+.SingleProjectProjectWrapper {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 40px;
+}
+
+.SingleProjectProjectWrapper img {
+    height: 100%;
+    filter: drop-shadow(0px 0px 30px var(--background-color-one));
+    overflow: hidden;
+}
+
+.SingleProjectProjectWrapper img[alt="PokéDex"] {
+    height: 60%;
+}
+
+.SingleProjectProjectWrapper h3 {
+    font-size: calc(var(--p-font-size)*2);
+    color: var(--text-color)
+}
+
+.SingleProjectHoverDiv {
+    position: absolute;
+    opacity: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    user-select: none;
+    transition: all 0.5s ease;
+    font-size: var(--p-font-size);
+    font-family: Poppins-SemiBold;
+    background-color: var(--background-color-three);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--background-color-three);
+}
+
+.SingleProjectHoverDiv p {
+    margin-top: 10px;
+}
+
+.SingleProjectHoverDiv a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: calc(var(--a-font-size)*0.8);
+    font-family: var(--font-family-bold);
+    color: var(--text-color)
+}
+
+.SingleProjectProjectWrapper img:hover+.SingleProjectHoverDiv,
+.SingleProjectProjectWrapper .SingleProjectHoverDiv:hover {
+    display: block;
+    font-size: calc(var(--p-font-size)*1);
+    color: var(--text-color);
+    opacity: 1;
+}
+
+.SingleProjectProjectWrapper img:hover,
+.SingleProjectProjectWrapper img:has(+div:hover) {
+    filter: drop-shadow(0px 0px 75px var(--background-color-one));
+}
+
+.SingleProjectProjectWrapper .SingleProject-Footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.SingleProjectProjectWrapper .SingleProject-Footer a {
+    font-size: var(--a-font-size);
+}
+
+.SingleProjectProjectWrapper::before {
+    content: "{";
+    font-size: calc(var(--p-font-size)*10);
+    position: absolute;
+    top: -20px;
+    left: -70px;
+    text-shadow: 0px 0px 5px var(--background-color-one);
+    opacity: .5;
+    color: var(--background-color-four);
+    font-family: var(--font-family-p);
+    display: block;
+}
+
+.SingleProjectProjectWrapper::after {
+    font-size: calc(var(--p-font-size)*10);
+    position: absolute;
+    bottom: -100px;
+    right: -70px;
+    z-index: -1;
+    font-family: var(--font-family-p);
+    text-shadow: 0px 0px 5px var(--background-color-one);
+    opacity: .5;
+    color: var(--background-color-four);
+    display: block;
+}
+
+.SingleProjectProjectWrapper:not(:nth-last-child(1))::after {
+    content: "},";
+}
+
+.SingleProjectProjectWrapper:nth-last-child(1)::after {
+    content: "} ]";
+    right: -220px;
+}
+
+.SingleProjectProjectWrapper:nth-child(1)::before {
+    content: "[{";
+    left: -150px;
+}
+
+@media only screen and (max-width: 900px) {
+    .SingleProjectProjectWrapper {
+        width: 300px;
+        height: 300px;
+    }
+
+    .SingleProjectProjectWrapper::before,
+    .SingleProjectProjectWrapper::after {
+        display: none;
+    }
+}

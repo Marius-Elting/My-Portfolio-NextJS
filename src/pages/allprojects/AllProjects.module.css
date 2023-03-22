@@ -1,0 +1,62 @@
+#AllProjectsWrapper {
+    margin: var(--main-wrapper-margin);
+    padding: var(--main-wrapper-padding);
+    margin-bottom: 0;
+    padding-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#AllProjectsWrapper article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 7rem;
+    column-gap: 10rem;
+
+}
+
+#AllProjectsWrapper h1 {
+    font-size: calc(var(--p-font-size)*4);
+    color: var(--text-color);
+    display: inline-block;
+    position: relative;
+}
+
+#AllProjectsWrapper>div::before {
+    content: "const";
+    font-size: calc(var(--p-font-size)*5);
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: -1;
+    font-family: var(--font-family-p);
+    text-shadow: 0px 0px 5px var(--background-color-one);
+    opacity: .5;
+    color: var(--background-color-four);
+    display: block;
+}
+
+#AllProjectsWrapper>div h1::after {
+    content: "=";
+    font-size: calc(var(--p-font-size)*5);
+    position: absolute;
+    top: -10px;
+    right: -70px;
+    z-index: -1;
+    font-family: var(--font-family-p);
+    text-shadow: 0px 0px 5px var(--background-color-one);
+    opacity: .5;
+    color: var(--background-color-four);
+    display: block;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #AllProjectsWrapper>div h1::after,
+    #AllProjectsWrapper>div::before {
+        display: none;
+    }
+}

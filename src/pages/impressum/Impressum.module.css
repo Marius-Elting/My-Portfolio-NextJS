@@ -1,0 +1,20 @@
+.ImpressumWrapper {
+    padding: var(--top-wrapper-padding);
+    margin: var(--main-wrapper-margin)
+}
+
+.ImpressumWrapper h1 {
+    font-size: calc(var(--p-font-size)*5);
+    color: var(--text-color);
+}
+
+.ImpressumWrapper p,
+.ImpressumWrapper a {
+    font-size: var(--p-font-size);
+    color: var(--text-color);
+}
+
+.ImpressumWrapper a {
+    text-decoration: underline;
+    display: block;
+}

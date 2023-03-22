@@ -1,0 +1,27 @@
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    width: 4rem;
+    height: 4rem;
+    border: 5px solid var(--background-color-one);
+    border-radius: 50%;
+    border-top-color: var(--text-color);
+    animation: spinner 1.5s linear infinite;
+    overflow: hidden;
+    z-index: 10;
+    position: absolute;
+    /* top: 25%; */
+    /* bottom: 50%; */
+    margin: auto;
+    left: 0;
+    right: 0;
+
+}
+
+.loading-center {
+    margin: 0 auto;
+}

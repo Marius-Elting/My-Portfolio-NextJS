@@ -1,0 +1,81 @@
+#ProjectsOverviewWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding: var(--main-wrapper-padding);
+    margin: var(--main-wrapper-margin);
+    margin-bottom: 0;
+    position: relative;
+}
+
+#ProjectsOverviewWrapper .ProjectsOverviewProjectWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 7rem;
+    column-gap: 10rem;
+}
+
+#ProjectsOverviewWrapper h2 {
+    font-size: calc(var(--p-font-size)*4);
+    color: var(--text-color);
+    display: inline-block;
+    position: relative;
+}
+
+#ProjectsOverviewWrapper h3 {
+    font-size: calc(var(--p-font-size)*2);
+    color: var(--text-color)
+}
+
+
+#ProjectsOverviewWrapper .ProjectsOverviewFooter {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+#ProjectsOverviewWrapper .ProjectsOverviewFooter a {
+    font-size: var(--a-font-size);
+    color: var(--text-color)
+}
+
+
+#ProjectsOverviewWrapper::before {
+    content: "const";
+    font-size: calc(var(--p-font-size)*5);
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: -1;
+    font-family: var(--font-family-p);
+    text-shadow: 0px 0px 5px var(--background-color-one);
+    opacity: .5;
+    color: var(--background-color-four);
+    display: block;
+}
+
+#ProjectsOverviewWrapper>article h2::after {
+    content: "=";
+    font-size: calc(var(--p-font-size)*5);
+    position: absolute;
+    top: -10px;
+    right: -130px;
+    z-index: -1;
+    font-family: var(--font-family-p);
+    text-shadow: 0px 0px 5px var(--background-color-one);
+    opacity: .5;
+    color: var(--background-color-four);
+    display: block;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #ProjectsOverviewWrapper>article h2::before,
+    #ProjectsOverviewWrapper>article h2::after,
+    #ProjectsOverviewWrapper::before {
+        display: none;
+    }
+}

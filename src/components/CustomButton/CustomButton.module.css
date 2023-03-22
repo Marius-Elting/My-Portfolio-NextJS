@@ -1,0 +1,32 @@
+.CustomButtonWrapper {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 3px solid var(--button-border);
+    /* background-color: var(--button-background); */
+    transition: .6s;
+    margin: 1rem 0;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.CustomButtonWrapper:hover {
+    cursor: pointer;
+}
+
+.CustomButtonWrapper a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: .6s;
+    position: relative;
+}
+
+.CustomButtonWrapper p {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: .6s;
+    position: relative;
+}
+
+.CustomButtonWrapper .downloadButton {
+    font-size: 22px;
+}

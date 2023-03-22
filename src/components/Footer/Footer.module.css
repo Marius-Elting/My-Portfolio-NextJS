@@ -1,0 +1,18 @@
+#FooterWrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    background-color: var(--background-color-five);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#FooterWrapper a {
+    color: var(--text-color);
+}

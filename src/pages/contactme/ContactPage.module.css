@@ -1,0 +1,207 @@
+.ContactPageWrapper {
+    padding: var(--top-wrapper-padding);
+    margin: var(--main-wrapper-margin);
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 15vh;
+}
+
+.ContactPageWrapper h1 {
+    font-size: calc(var(--p-font-size)*5);
+    color: var(--text-color);
+}
+
+.ContactPageFormWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 5rem;
+}
+
+.ContactPageFormWrapper label {
+    font-size: calc(var(--p-font-size)*2.5);
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+.ContactPageFormWrapper input,
+.ContactPageFormWrapper textarea {
+    width: 500px;
+    padding: .5rem;
+    font-size: calc(var(--p-font-size)*1.2);
+    font-family: var(--font-family-p);
+    box-shadow: 0px 0px 20px var(--background-color-one);
+    border-radius: 10px;
+    border: none;
+}
+
+.ContactPageFormWrapper textarea {
+    resize: none;
+    height: 150px;
+}
+
+.ContactPageFormWrapper input:focus,
+.ContactPageFormWrapper textarea:focus {
+    outline: 3px solid var(--text-color)
+}
+
+.ContactPageSendButtonWrapper {
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+
+.ContactPageFormWrapper button {
+    width: 300px;
+    padding: .5rem;
+    font-size: calc(var(--p-font-size)*1.2);
+    font-family: var(--font-family-p);
+    background-color: var(--background-color-four);
+    color: var(--text-color);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px var(--background-color-one);
+    align-self: center;
+}
+
+
+
+.ContactPageFormWrapper button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 50px var(--background-color-one);
+}
+
+.ContactPageFormWrapper button[disabled] {
+    filter: grayscale(50%);
+    cursor: wait;
+    box-shadow: 0px 0px 5px var(--background-color-one);
+}
+
+.ContactPageFormWrapper .errorMsg {
+    color: red;
+    font-size: calc(var(--p-font-size)*1.2);
+}
+
+
+.ContactPage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: var(--p-font-size);
+}
+
+.ContactPageacceptData label {
+    font-size: var(--p-font-size);
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.ContactPageacceptData p {
+    font-size: var(--p-font-size);
+    color: var(--text-color);
+    word-wrap: break-word;
+}
+
+.ContactPageacceptData a {
+    font-size: var(--p-font-size);
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.ContactPageacceptData label input {
+    background-color: none;
+    box-shadow: none;
+    width: auto;
+    /* height: 50px; */
+    margin: 10px;
+}
+
+.icons {
+    font-size: 70px;
+    color: var(--text-color);
+    padding: 10px
+}
+
+.icons:hover {
+    color: var(--background-color-one);
+
+}
+
+.ContactPageRightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+
+
+.ContactPageRightContainer h3 {
+
+    color: var(--text-color);
+    font-size: calc(var(--p-font-size)*2)
+}
+
+.ContactPageRightContainer h4 {
+    color: var(--text-color);
+    font-size: calc(var(--p-font-size)*1.5)
+}
+
+.ContactPageRightContainer a {
+    color: var(--text-color);
+    font-size: calc(var(--p-font-size)*1.2);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+
+    .ContactPageWrapper {
+        flex-direction: column;
+        gap: 10rem
+    }
+
+    .ContactPageRightContainer,
+    .ContactPageLeftContainer {
+        width: 100%;
+    }
+
+    .ContactPageFormWrapper {
+        margin: 0;
+        width: 100%;
+    }
+
+    .ContactPageFormWrapper input,
+    .ContactPageFormWrapper textarea {
+        width: 95%;
+    }
+
+    .ContactPageacceptData label input {
+        height: 40px;
+        width: 40px;
+
+    }
+
+    .ContactPageacceptData {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .ContactPageRightContainer a {
+        color: var(--text-color);
+        font-size: calc(var(--p-font-size)*2)
+    }
+
+}

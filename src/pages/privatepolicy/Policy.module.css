@@ -1,0 +1,19 @@
+.PolicyWrapper {
+    padding: var(--top-wrapper-padding);
+    margin: var(--main-wrapper-margin)
+}
+
+.PolicyWrapper h1 {
+    font-size: calc(var(--p-font-size)*5);
+    color: var(--text-color);
+}
+
+.PolicyWrapper p,
+.PolicyWrapper a {
+    font-size: var(--p-font-size);
+    color: var(--text-color);
+}
+
+.PolicyWrapper a {
+    text-decoration: underline;
+}
