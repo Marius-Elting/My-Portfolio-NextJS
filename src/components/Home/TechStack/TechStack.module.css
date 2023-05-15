@@ -10,32 +10,25 @@
     position: relative;
 }
 
-.TechStack>div>h2 {
+.TechStack>h2 {
     grid-column: 2/3;
-    font-size: calc(var(--p-font-size)*4);
-    color: var(--text-color);
+    font-size: calc(var(--p-font-size)*5);
+    font-family: var(--font-family-bold-italic);
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: relative;
-    display: inline-block;
-}
-
-.TechStack>div {
-    align-self: flex-start;
 }
 
 .TechStack img {
-    /* width: 100%; */
     object-fit: contain;
     height: 120px;
     aspect-ratio: 1/1;
     backface-visibility: hidden;
     transition: 0.5s ease;
-    filter: drop-shadow(0px 0px 30px var(--background-color-one));
 }
 
-.TechStack img:hover,
-.TechStack img:has(+div:hover) {
-    filter: drop-shadow(0px 0px 50px var(--background-color-one));
-}
+
 
 .imgWrapper {
     display: flex;
@@ -51,8 +44,6 @@
     padding: 0px 40px 0px 40px;
 }
 
-
-
 .SingleImgWrapper {
     display: flex;
     flex-direction: column;
@@ -64,20 +55,6 @@
     justify-self: start;
 }
 
-/* .TechStack .SingleImgWrapper:nth-of-type(1) {
-    margin-left: 50px;
-
-}
-
-.TechStack .SingleImgWrapper:nth-last-child(1) {
-    margin-right: 50px;
-} */
-
-.TechStack h2 {
-    color: white;
-    text-shadow: 0px 0px 5px var(--background-color-one);
-}
-
 
 .ImgDescription {
     position: absolute;
@@ -86,7 +63,16 @@
     bottom: 50%;
     transition: 0.5s ease;
     font-size: var(--p-font-size);
-    font-family: Poppins-SemiBold;
+}
+
+.ImgDescription h2 {
+    font-family: var(--font-family-p);
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    color: var(--white);
+    padding: 5px
 }
 
 .SingleImgWrapper:hover>.ImgDescription {
@@ -95,9 +81,7 @@
     transition: 0.5s ease;
     font-size: calc(var(--p-font-size)*1.5);
     user-select: none;
-    color: white;
     opacity: 1;
-    font-family: Poppins-SemiBold;
 }
 
 .TechStack figure:hover>img {
@@ -118,76 +102,12 @@
     display: block;
 } */
 
-.SingleImgWrapper:not(:nth-last-of-type(1)):after {
-    content: ",";
-    font-size: calc(var(--p-font-size)*8);
-    position: absolute;
-    bottom: -70px;
-    right: -50px;
-    z-index: -1;
-    font-family: var(--font-family-p);
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-three);
-    display: block;
-}
 
 
-.SingleImgWrapper:nth-last-child(1)::after {
-    content: "]";
-    font-size: calc(var(--p-font-size)*8);
-    position: absolute;
-    top: 50;
-    right: -100px;
-    z-index: -1;
-    font-family: var(--font-family-p);
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-three);
-    display: block;
-}
 
-.SingleImgWrapper:nth-of-type(1)::before {
-    content: "[";
-    font-size: calc(var(--p-font-size)*8);
-    position: absolute;
-    top: 50;
-    left: -100px;
-    z-index: -1;
-    font-family: var(--font-family-p);
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-three);
-    display: block;
-}
 
-.TechStack::before {
-    content: "Const";
-    font-size: calc(var(--p-font-size)*5);
-    position: absolute;
-    top: 20px;
-    left: 50px;
-    z-index: -1;
-    font-family: var(--font-family-p);
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-three);
-    display: block;
-}
 
-.TechStack>div h2::after {
-    content: "=";
-    font-size: calc(var(--p-font-size)*5);
-    position: absolute;
-    top: -10px;
-    right: -70px;
-    z-index: -1;
-    font-family: var(--font-family-p);
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-three);
-    display: block;
-}
+
 
 
 @media only screen and (max-width: 1780px) {

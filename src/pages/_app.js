@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     Aos.init({ duration: 1000 });
     window.addEventListener('scroll', scrollHandler, { passive: true });
-
+    setLang(sessionStorage.getItem("Language"))
     if (!sessionStorage.getItem("Language")) {
       changeLangHandler("English")
     }

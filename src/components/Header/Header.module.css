@@ -23,6 +23,9 @@
 
 #HeaderWrapper h1 {
     color: var(--white);
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .HeaderBurger {
@@ -50,7 +53,11 @@
 }
 
 #NavWrapper ul li span.active {
-    text-decoration: underline;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
 }
 
 #NavWrapper ul li a {
@@ -75,9 +82,10 @@
     }
 
     .HeaderBurger {
-        color: var(--text-color);
-        font-family: Poppins-Bold;
+        color: var(--white);
+        font-family: var(--font-family-bold);
         background-color: transparent;
+        letter-spacing: 2px;
         display: flex;
         outline: none;
         border: none;

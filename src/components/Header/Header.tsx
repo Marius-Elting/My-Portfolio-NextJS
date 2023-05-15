@@ -11,11 +11,11 @@ import {
   useRef,
   useState,
 } from "react";
+
 interface IHeaderProps {
   setLang: Dispatch<SetStateAction<string>>;
   lang: string;
 }
-
 type Language = "English" | "German";
 const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
   const [Header, setHeader] = useState<IHeaderData>();
@@ -23,9 +23,7 @@ const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
   const burgerRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const lang: Language =
-      (sessionStorage.getItem("Language") as Language) ||
-      ("English" as Language);
+    const lang: Language = sessionStorage.getItem("Language") as Language;
     setHeader(data[lang].Header);
   }, []);
 

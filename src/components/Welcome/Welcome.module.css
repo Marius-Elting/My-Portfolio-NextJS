@@ -25,13 +25,13 @@
 .WelcomeWrapper h2 {
     /* background: linear-gradient(180deg, #FF00CE, #333399); */
     background: var(--text-gradient);
-    padding: 0 1rem;
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    padding: 0 1rem;
     font-family: var(--font-family-bold-italic);
     font-size: calc(var(--p-font-size)*4);
     line-height: calc(var(--p-font-size)*4);
     margin-bottom: -10px;
-    -webkit-text-fill-color: transparent;
 }
 
 .WelcomeWrapper h1 {
