@@ -1,5 +1,5 @@
 {
-  "name": "nextportfolio",
+  "name": "nextport",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "aos": "^2.3.4",
-    "babel-preset-es2015": "^6.24.1",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
+    "@types/node": "20.1.4",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "next": "13.4.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "typescript": "5.0.4",
+    "aos": "^2.3.4",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
