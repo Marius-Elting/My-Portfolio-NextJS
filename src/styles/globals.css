@@ -1,17 +1,28 @@
 @font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/Poppins/Poppins-Medium.ttf');
+  font-family: Lemon-Medium;
+  src: url('../fonts/lemon_milk/LEMONMILK-Regular.otf');
 }
 
 @font-face {
-  font-family: Poppins-SemiBold;
-  src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+  font-family: Lemon-Bold;
+  src: url('../fonts/lemon_milk/LEMONMILK-BoldItalic.otf');
 }
 
 @font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+  font-family: Lemon-BoldItalic;
+  src: url('../fonts/lemon_milk/LEMONMILK-BoldItalic.otf');
 }
+
+@font-face {
+  font-family: Lemon-MediumItalic;
+  src: url('../fonts/lemon_milk/LEMONMILK-MediumItalic.otf');
+}
+
+@font-face {
+  font-family: Lemon-Light;
+  src: url('../fonts/lemon_milk/LEMONMILK-Light.otf');
+}
+
 
 
 * {
@@ -24,7 +35,7 @@
 
 body {
   /* background-color: #002855 */
-  background: linear-gradient(#002855 34%, #0a2e71 70%, #023E7D 100%);
+  background: #0C0C0C;
   min-height: 90vh;
   position: relative;
 }
@@ -44,9 +55,20 @@ body {
   --main-wrapper-padding: 100px 10vw;
   --main-wrapper-margin: 100px 0px;
   --button-border: #0466c8;
-  --font-family-p: Poppins-SemiBold;
-  --font-family-bold: Poppins-Bold;
+  --font-family-light: Lemon-Light;
+  --font-family-p: Lemon-Medium;
+  --font-family-bold: Lemon-Bold;
+  --font-family-p-italic: Lemon-MediumItalic;
+  --font-family-bold-italic: Lemon-BoldItalic;
   scroll-behavior: smooth;
+  --purple: #8a2387;
+  --red: #e94057;
+  --orange: #f27121: --newBlue: rgba(4, 0, 255, 0.150);
+  --text-gradient: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  --media-large: 1200px;
+  --media-medium: 900px;
+  --media-small: 600px;
+  --media-xsmall: 400px;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -121,3 +143,8 @@ body {
 a {
   text-decoration: none;
 }
+
+
+/* #FF00CE, #333399 */
+
+/* https://uigradients.com/#Wiretap */

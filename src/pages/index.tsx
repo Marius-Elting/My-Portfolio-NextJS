@@ -3,6 +3,7 @@ import ProjectOverwiew from "../components/Home/MyProjects/ProjectOverview";
 import TechStack from "../components/Home/TechStack/TechStack";
 import ThisIsMe from "../components/Home/ThisIsMe/ThisIsMe";
 import Head from "next/head";
+import Welcome from "@/components/Welcome/Welcome";
 
 const Home: FC = (): ReactElement => {
   return (
@@ -21,8 +22,7 @@ const Home: FC = (): ReactElement => {
   I'm an aspiring Full Stack Web Developer using the MERN Stack. This is my Homepage"
         />
       </Head>
-      {/* @ts-ignore TODO */}
-      <ThisIsMe />
+      <Welcome />
 
       <TechStack />
       {/* @ts-ignore TODO */}

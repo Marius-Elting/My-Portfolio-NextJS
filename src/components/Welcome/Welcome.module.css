@@ -1,0 +1,94 @@
+.WelcomeWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: var(--top-wrapper-padding);
+}
+
+.WelcomeWrapper article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.WelcomeWrapper h3 {
+    color: white;
+    padding: 0 1rem;
+    -webkit-background-clip: text;
+    font-family: var(--font-family-light);
+    font-size: calc(var(--p-font-size) *2);
+    line-height: calc(var(--p-font-size)*2);
+}
+
+.WelcomeWrapper h2 {
+    /* background: linear-gradient(180deg, #FF00CE, #333399); */
+    background: var(--text-gradient);
+    padding: 0 1rem;
+    -webkit-background-clip: text;
+    font-family: var(--font-family-bold-italic);
+    font-size: calc(var(--p-font-size)*4);
+    line-height: calc(var(--p-font-size)*4);
+    margin-bottom: -10px;
+    -webkit-text-fill-color: transparent;
+}
+
+.WelcomeWrapper h1 {
+    padding: 0 1rem;
+    -webkit-text-stroke: 3px white;
+    font-family: var(--font-family-bold-italic);
+    font-size: calc(var(--p-font-size)*10);
+    line-height: calc(var(--p-font-size)*10);
+    -webkit-text-fill-color: #0C0C0C;
+    color: #0C0C0C;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .WelcomeWrapper {
+        --p-font-size: 14px
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .WelcomeWrapper {
+        --p-font-size: 9px
+    }
+
+    .WelcomeWrapper h3 {
+        font-size: calc(var(--p-font-size) *3);
+        line-height: calc(var(--p-font-size)*2.5);
+    }
+
+    .WelcomeWrapper h2 {
+        font-size: calc(var(--p-font-size) *5.5);
+        line-height: calc(var(--p-font-size)*5.5);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .WelcomeWrapper {
+        --p-font-size: 6px
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .WelcomeWrapper {
+        --p-font-size: 4px;
+        height: 250px;
+        align-items: flex-end;
+    }
+
+    .WelcomeWrapper h3 {
+        font-size: calc(var(--p-font-size) *3);
+        line-height: calc(var(--p-font-size)*3);
+    }
+
+    .WelcomeWrapper h2 {
+        font-size: calc(var(--p-font-size) *5.5);
+        line-height: calc(var(--p-font-size)*9);
+        margin-bottom: 0;
+    }
+}
