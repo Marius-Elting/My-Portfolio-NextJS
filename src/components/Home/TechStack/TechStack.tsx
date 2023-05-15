@@ -15,6 +15,16 @@ import {
   Sass,
   Bootstrap,
   TS,
+  TSStroke,
+  HTMLStroke,
+  CSSStroke,
+  JavaScriptStroke,
+  MongoDBIconStroke,
+  ExpressIconStroke,
+  ReactIconStroke,
+  NodeJSIconStroke,
+  ReduxStroke,
+  FigmaStroke,
 } from "../../../Imports";
 
 import styles from "./TechStack.module.css";
@@ -35,7 +45,7 @@ function TechStack() {
           <Image
             width={120}
             height={120}
-            src={HTML.src}
+            src={HTMLStroke.src}
             alt="HTML Logo"></Image>
           <div className={styles.ImgDescription}>
             <h2>HTML</h2>
@@ -48,7 +58,7 @@ function TechStack() {
           <Image
             width={120}
             height={120}
-            src={CSS.src}
+            src={CSSStroke.src}
             alt="CSS Logo"></Image>
           <div className={styles.ImgDescription}>
             <h2>CSS</h2>
@@ -61,7 +71,7 @@ function TechStack() {
           <Image
             width={120}
             height={120}
-            src={JavaScript.src}
+            src={JavaScriptStroke.src}
             alt="Javascript Logo"></Image>
           <div className={styles.ImgDescription}>
             <h2>JavaScript</h2>
@@ -74,7 +84,7 @@ function TechStack() {
           <Image
             width={120}
             height={120}
-            src={ReactIcon.src}
+            src={ReactIconStroke.src}
             alt="React Logo"></Image>
           <div className={styles.ImgDescription}>
             <h2>React</h2>
@@ -87,7 +97,7 @@ function TechStack() {
           <Image
             width={120}
             height={120}
-            src={NodeJSIcon.src}
+            src={NodeJSIconStroke.src}
             alt="NodeJS Logo"></Image>
           <div className={styles.ImgDescription}>
             <h2>NodeJS</h2>
@@ -100,7 +110,7 @@ function TechStack() {
           <Image
             width={120}
             height={120}
-            src={ExpressIcon.src}
+            src={ExpressIconStroke.src}
             alt="ExpressJS Logo"></Image>
           <div className={styles.ImgDescription}>
             <h2>ExpressJS</h2>
@@ -113,7 +123,7 @@ function TechStack() {
           <Image
             width={120}
             height={120}
-            src={MongoDBIcon.src}
+            src={MongoDBIconStroke.src}
             alt="MongoDB Logo"></Image>
           <div className={styles.ImgDescription}>
             <h2>MongoDB</h2>
@@ -128,13 +138,13 @@ function TechStack() {
           <Image
             width={120}
             height={120}
-            src={Redux.src}
+            src={ReduxStroke.src}
             alt="Redux Logo"></Image>
           <div className={styles.ImgDescription}>
             <h2>Redux</h2>
           </div>
         </div>
-        <div
+        {/* <div
           className={styles.SingleImgWrapper}
           {...aosDataProject}
           data-aos-offset="151">
@@ -146,7 +156,7 @@ function TechStack() {
           <div className={styles.ImgDescription}>
             <h2>Firebase</h2>
           </div>
-        </div>
+        </div> */}
         <div
           className={styles.SingleImgWrapper}
           {...aosDataProject}
@@ -154,7 +164,7 @@ function TechStack() {
           <Image
             width={120}
             height={120}
-            src={TS.src}
+            src={TSStroke.src}
             alt="TypeScript Logo"></Image>
           <div className={styles.ImgDescription}>
             <h2>TypeScript</h2>
@@ -167,13 +177,13 @@ function TechStack() {
           <Image
             width={120}
             height={120}
-            src={Figma.src}
+            src={FigmaStroke.src}
             alt="Figma Logo"></Image>
           <div className={styles.ImgDescription}>
             <h2>Figma</h2>
           </div>
         </div>
-        <div
+        {/* <div
           className={styles.SingleImgWrapper}
           {...aosDataProject}
           data-aos-offset="153">
@@ -185,8 +195,8 @@ function TechStack() {
           <div className={styles.ImgDescription}>
             <h2>Sass</h2>
           </div>
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className={styles.SingleImgWrapper}
           {...aosDataProject}
           data-aos-offset="155">
@@ -198,8 +208,8 @@ function TechStack() {
           <div className={styles.ImgDescription}>
             <h2>Git</h2>
           </div>
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className={styles.SingleImgWrapper}
           {...aosDataProject}
           data-aos-offset="154">
@@ -211,7 +221,7 @@ function TechStack() {
           <div className={styles.ImgDescription}>
             <h2>Bootstrap</h2>
           </div>
-        </div>
+        </div> */}
       </article>
     </section>
   );

@@ -17,6 +17,7 @@
     color: var(--white);
     padding: 0 1rem;
     -webkit-background-clip: text;
+    background-clip: text;
     font-family: var(--font-family-light);
     font-size: calc(var(--p-font-size) *2);
     line-height: calc(var(--p-font-size)*2);
@@ -27,6 +28,7 @@
     background: var(--text-gradient);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     padding: 0 1rem;
     font-family: var(--font-family-bold-italic);
     font-size: calc(var(--p-font-size)*4);
