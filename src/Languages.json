@@ -24,14 +24,6 @@
           "stack": "#React #CSS #API"
         },
         {
-          "title": "Weather APP",
-          "headline": "The WeatherApp Project",
-          "description": "The WeatherApp Project was a front-end only project. I used HTML, CSS and JavaScript to develop it. The data for the project was gathered from the Open Weather API.",
-          "image": "WeatherAppImage",
-          "link": "https://marius-elting.github.io/Weather-App/",
-          "stack": "#HTML #CSS #Javascript #API"
-        },
-        {
           "title": "PokéDex",
           "headline": "The PokéDex Project",
           "description": "The PokéDex Project was a front-end only project.The project was carried out by a group of four people. We used ReactJS and CSS to develop the project. The data used in the PokéDex project was obtained from the Pokemon API.",
@@ -46,13 +38,21 @@
           "image": "SilentMoonImg",
           "link": "https://silentmoon.up.railway.app/",
           "stack": "#React #SCSS #Nodejs #Expressjs #Mongodb #Redux"
+        },
+        {
+          "title": "Weather APP",
+          "headline": "The WeatherApp Project",
+          "description": "The WeatherApp Project was a front-end only project. I used HTML, CSS and JavaScript to develop it. The data for the project was gathered from the Open Weather API.",
+          "image": "WeatherAppImage",
+          "link": "https://marius-elting.github.io/Weather-App/",
+          "stack": "#HTML #CSS #Javascript #API"
         }
       ]
     },
     "AboutMe": {
       "AllHeadline": "About Me",
       "MyPastHeadline": "My Past",
-      "MyPast": "After graduating from secondary school in 2018, I began training as an e-commerce merchant and successfully completed the program in 2021. I then worked for a year at the training company before seeking a new challenge. I discovered SuperCode's Full Stack Bootcamp and, after attending a workshop and researching further, I decided to enroll in the program.<br></br> You can read more about my experiences at the bootcamp in the article The Bootcamp.",
+      "MyPast": "After graduating from secondary school in 2018, I began training as an e-commerce merchant and successfully completed the program in 2021. I then worked for a year at the training company before seeking a new challenge. I discovered SuperCode's Full Stack Bootcamp and, after attending a workshop and researching further, I decided to enroll in the program.\nYou can read more about my experiences at the bootcamp in the article The Bootcamp.",
       "TheBootcampHeadline": "The Bootcamp",
       "TheBootcamp": "The bootcamp started on September 19, 2022 and ended on February 23, 2023. From the beginning, I stood out to the other participants and was able to learn quickly. I have a strong understanding of reading and writing code. I use my free time to further develop my front-end and back-end skills. Within my group, I am one of the top performers and can explain and help code to the other participants."
     },
@@ -103,34 +103,35 @@
           "stack": "#React #CSS #API"
         },
         {
-          "title": "Wetter APP",
-          "headline": "Das Wetter App Projekt",
-          "description": "Das Wetter App Projekt war ein rein Front-End-Projekt. Ich habe es mit HTML, CSS und JavaScript entwickelt. Die Daten für das Projekt wurden von der Open Weather API bezogen.",
-          "image": "WeatherAppImage",
-          "link": "https://marius-elting.github.io/Weather-App/",
-          "stack": "#HTML #CSS #Javascript #API"
-        },
-        {
           "title": "PokéDex",
           "headline": "Das PokéDex Projekt",
           "description": "Das PokéDex Projekt war ein rein Front-End-Projekt. Das Projekt wurde von einer Gruppe von vier Personen durchgeführt. Wir haben ReactJS verwendet, um das Projekt zu entwickeln. Die im PokéDex-Projekt verwendeten Daten stammen von der Pokemon API.",
           "image": "PokeDexImage",
           "link": "https://yourtoponepokedex.netlify.app/",
           "stack": "#React #CSS #API"
-        }, {
+        },
+        {
           "title": "Silent Moon",
           "headline": "Das Silent Moon Projekt",
           "description": "Das Silent Moon Projekt war ein großes Full-Stack-Projekt, das von einer Gruppe von drei Personen durchgeführt wurde. Wir benutzten ReactJS, Redux und SCSS für das Frontend und NodeJS, ExpressJS und MongoDB für das Backend. Diese Website ist im Moment nur für mobile Geräte optimiert!",
           "image": "SilentMoonImg",
           "link": "https://silentmoon.up.railway.app/",
           "stack": "#React #SCSS #Nodejs #Expressjs #Mongodb #Redux"
+        },
+        {
+          "title": "Wetter APP",
+          "headline": "Das Wetter App Projekt",
+          "description": "Das Wetter App Projekt war ein rein Front-End-Projekt. Ich habe es mit HTML, CSS und JavaScript entwickelt. Die Daten für das Projekt wurden von der Open Weather API bezogen.",
+          "image": "WeatherAppImage",
+          "link": "https://marius-elting.github.io/Weather-App/",
+          "stack": "#HTML #CSS #Javascript #API"
         }
       ]
     },
     "AboutMe": {
       "AllHeadline": "Über Mich",
       "MyPastHeadline": "Meine Vergangenheit",
-      "MyPast": "Nach dem Abschluss der Realschule im Jahr 2018 habe ich eine Ausbildung zum Kaufmann im E-Commerce begonnen und diese im Jahr 2021 erfolgreich abgeschlossen. Ich arbeitete dann ein Jahr lang bei dem Ausbildungsunternehmen, bevor ich eine neue Herausforderung suchte. Ich entdeckte SuperCode's Full Stack Bootcamp und entschied mich nach Teilnahme an einem Workshop und weiteren Recherchen, für das Bootcamp bei SuperCode. Du kannst mehr über meine Erfahrungen im Bootcamp in dem Artikel Das Bootcamp lesen.",
+      "MyPast": "Nach dem Abschluss der Realschule im Jahr 2018 habe ich eine Ausbildung zum Kaufmann im E-Commerce begonnen und diese im Jahr 2021 erfolgreich abgeschlossen. Ich arbeitete dann ein Jahr lang bei dem Ausbildungsunternehmen, bevor ich eine neue Herausforderung suchte. Ich entdeckte SuperCode's Full Stack Bootcamp und entschied mich nach Teilnahme an einem Workshop und weiteren Recherchen, für das Bootcamp bei SuperCode.\nDu kannst mehr über meine Erfahrungen im Bootcamp in dem Artikel 'Das Bootcamp' lesen.",
       "TheBootcampHeadline": "Das Bootcamp",
       "TheBootcamp": "Das Bootcamp begann am 19. September 2022 und endete am 23. Februar 2023. Von Beginn an stach ich gegenüber den anderen Teilnehmern heraus und konnte schnell lernen. Ich habe ein starkes Verständnis dafür, Code zu lesen und zu schreiben. Ich nutze meine Freizeit, um meine Fähigkeiten im Bereich Front- und Backend weiter zu entwickeln. Innerhalb meiner Gruppe bin ich einer der Top-Performer und kann den anderen Teilnehmern Code erklären und weiterhelfen."
     },

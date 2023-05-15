@@ -4,7 +4,8 @@ import AboutMeHeader from "../../components/AboutMe/AboutMeHeader/AboutMeHeader"
 import Head from "next/head";
 
 function AboutMe() {
-    return (<main id="AboutMe-Wrapper">
+
+    return (<main id={"AboutMe-Wrapper"}>
         <Head>
             <meta charSet="utf-8" />
             <title>About Me - Marius Elting - Webdeveloper</title>

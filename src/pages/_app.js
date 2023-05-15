@@ -7,9 +7,11 @@ import { useRouter } from 'next/navigation';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
+
   const [lang, setLang] = useState("English")
 
   const changeLangHandler = (param) => {
+    console.log(param)
     setLang(param)
     sessionStorage.setItem("Language", param)
     router.refresh();

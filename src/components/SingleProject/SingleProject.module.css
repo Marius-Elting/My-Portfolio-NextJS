@@ -107,6 +107,7 @@
 }
 
 .SingleProjectProjectWrapper:nth-last-child(1)::after {
+
     content: "} ]";
     right: -220px;
 }

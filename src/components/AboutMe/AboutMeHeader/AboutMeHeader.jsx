@@ -1,16 +1,18 @@
 import CustomButton from "../../CustomButton/CustomButton";
 import styles from "./AboutMeHeader.module.css";
 import MyPicture from "../../Picture/Picture";
-// import CV from "../../../assets/Marius Elting Lebenslauf.pdf"
+// import CV from "../../../assets/Marius_Elting_Lebenslauf.pdf"
 import Data from "../../../Languages.json"
 import { useEffect, useState } from "react";
 
 function AboutMeHeader() {
     const [AboutMe, setAboutMe] = useState()
     const [Other, setOther] = useState()
+
     useEffect(() => {
         if (!sessionStorage.getItem("Language")) {
             setAboutMe(Data["English"].AboutMe)
+            console.log(Data["English"].AboutMe)
             setOther(Data["English"].Other)
         } else {
             setAboutMe(Data[sessionStorage.getItem("Language")].AboutMe)
@@ -18,8 +20,9 @@ function AboutMeHeader() {
         }
     }, [])
 
-    if (!AboutMe || Other) {
-        return
+    if (!AboutMe || !Other) {
+
+        return <p></p>
     }
     return (
         <section id={styles.AboutMeHeaderWrapper}>
@@ -39,9 +42,11 @@ function AboutMeHeader() {
             </section>
             <section id={styles.AboutMeHeaderRightContainer}>
                 <MyPicture />
-                <CustomButton size={25} linkTo="/contactme">{Other.contactButton}</CustomButton>
+                <CustomButton size={22} linkTo="/contactme">{Other.contactButton}</CustomButton>
                 <div className={styles.CustomButtonWrapper}>
-                    {/* <a href={CV} className={`${styles.downloadButton} underlineHover`} download="">{Other.downloadCV}</a> */}
+                    {/* <div className="CustomButtonWrapper">
+                        <a href={CV} className="underlineHover downloadButton" download="">{Other.downloadCV}</a>
+                    </div> */}
                 </div>
             </section>
         </section>

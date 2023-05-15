@@ -5,6 +5,7 @@ import MyPicture from "../../components/Picture/Picture";
 import Head from "next/head";
 import Data from "../../Languages.json";
 import Loading from "../../components/Loading/Loading";
+import { GitHubLogo, GitHubLogo2, LinkedInLogo } from "@/components/Logos/Logos";
 
 function ContactPage() {
     const [emailStatus, setEmailStatus] = useState();
@@ -123,7 +124,7 @@ function ContactPage() {
                     >
                     </input>
                     <p
-                        className="errorMsg"
+                        className={styles.errorMsg}
                         style={{
                             display: emailStatus === "Error" ? "block" : "none",
                         }}
@@ -177,14 +178,15 @@ function ContactPage() {
                     <MyPicture />
                 </article>
                 <article>
-                    <a title="My LinkedIn" target="_blanck" href="https://www.linkedin.com/in/marius-elting-a60959203/"><i className="uil uil-linkedin icons"></i></a>
-                    <a title="My Github" target="_blanck" href="https://github.com/Marius-Elting"><i className="uil uil-github icons"></i></a>
+                    <a className={styles.ContactPageLogoWrapper} title="My LinkedIn" target="_blanck" href="https://www.linkedin.com/in/marius-elting-a60959203/"><LinkedInLogo /></a>
+                    <a className={styles.ContactPageLogoWrapper} title="My Github" target="_blanck" href="https://github.com/Marius-Elting"> <GitHubLogo /></a>
                 </article>
                 <article>
-                    <a href="mailto:contact@mariuselting.dev" className="underlineHover">contact@mariuselting.dev</a>
+                    <a href="mailto:contact@mariuselting.dev" className="underlineHover">contact@mariuselting.dev</a> <button className={`underlineHover ${styles.ContactPageCopyButton}`} onClick={(e) => { navigator.clipboard.writeText("contact@mariuselting.dev"); e.target.innerHTML = "copied!"; setTimeout(() => { e.target.innerHTML = "copy" }, 2000) }}
+                    >copy</button>
                 </article>
             </section>
-        </main >
+        </main>
     );
 }
 

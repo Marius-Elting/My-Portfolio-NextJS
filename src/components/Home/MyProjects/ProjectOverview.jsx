@@ -25,12 +25,12 @@ function ProjectOverwiew() {
                 <h2>myProjects</h2>
             </article>
             <article className={styles.ProjectsOverviewProjectWrapper}>
-                {Projects.ProjectData.slice(0, 4).map((project, index) => (
+                {Projects.ProjectData.slice(0, 3).map((project, index) => (
                     <SingleProject key={index} data={project} />
                 ))}
             </article>
             <article className={styles.ProjectsOverviewFooter}>
-                <Link className="underlineHover" href="/projects">{Projects.showmore}</Link>
+                <Link className="underlineHover" href="/allprojects">{Projects.showmore}</Link>
             </article>
         </section>
     );
