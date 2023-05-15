@@ -14,7 +14,7 @@
 }
 
 .WelcomeWrapper h3 {
-    color: white;
+    color: var(--white);
     padding: 0 1rem;
     -webkit-background-clip: text;
     font-family: var(--font-family-light);
@@ -36,7 +36,7 @@
 
 .WelcomeWrapper h1 {
     padding: 0 1rem;
-    -webkit-text-stroke: 3px white;
+    -webkit-text-stroke: 3px var(--white);
     font-family: var(--font-family-bold-italic);
     font-size: calc(var(--p-font-size)*10);
     line-height: calc(var(--p-font-size)*10);

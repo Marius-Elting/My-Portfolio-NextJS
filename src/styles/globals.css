@@ -63,7 +63,9 @@ body {
   scroll-behavior: smooth;
   --purple: #8a2387;
   --red: #e94057;
-  --orange: #f27121: --newBlue: rgba(4, 0, 255, 0.150);
+  --orange: #f27121;
+  --newBlue: rgba(4, 0, 255, 0.150);
+  --white: #E3E3E3;
   --text-gradient: linear-gradient(to right, #8a2387, #e94057, #f27121);
   --media-large: 1200px;
   --media-medium: 900px;
@@ -130,7 +132,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

@@ -3,10 +3,11 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: var(--background-color-one);
-    padding: 10px 40px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
     /* height: 75px; */
-    color: var(--text-color);
+    color: var(--white);
     position: fixed;
     top: 0;
     /* width: 30px; */
@@ -14,7 +15,6 @@
     right: 0;
     overflow: hidden;
     z-index: 9;
-    box-shadow: 0px 3px 5px var(--background-color-one);
 }
 
 .HeaderDeviceInfo {
@@ -22,7 +22,7 @@
 }
 
 #HeaderWrapper h1 {
-    color: var(--text-color);
+    color: var(--white);
 }
 
 .HeaderBurger {
@@ -55,7 +55,7 @@
 
 #NavWrapper ul li a {
     text-decoration: none;
-    color: var(--text-color);
+    color: inherit;
     font-size: var(--a-font-size);
 }
 
