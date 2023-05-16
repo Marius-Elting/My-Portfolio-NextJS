@@ -10,7 +10,8 @@
 }
 
 #ErrorPageMainWrapper h1 {
-    background: -webkit-linear-gradient(var(--background-color-two), var(--background-color-one));
+    background: var(--text-gradient);
+    font-family: var(--font-family-bold-italic);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -18,7 +19,9 @@
 }
 
 #ErrorPageMainWrapper p {
-    background: -webkit-linear-gradient(var(--background-color-two), var(--background-color-one));
+    color: var(--white);
+    background: var(--text-gradient);
+    font-family: var(--font-family-bold);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -26,5 +29,5 @@
 
 #ErrorPageMainWrapper a {
     font-size: calc(var(--p-font-size)*2);
-    color: var(--text-color);
+    color: var(--white);
 }
