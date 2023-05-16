@@ -96,3 +96,17 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .SingleProjectHoverDiv p {
+        font-size: calc(var(--p-font-size)*1.5);
+    }
+
+    .SingleProjectHoverDiv h4 {
+        font-size: calc(var(--p-font-size)*1.5);
+    }
+
+    .SingleProjectHoverDiv a {
+        font-size: calc(var(--p-font-size)*1.3);
+    }
+}
