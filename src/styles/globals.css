@@ -29,7 +29,7 @@
   margin: 0;
   padding: 0;
   /* outline: 1px solid black; */
-  font-family: Poppins-Medium, sans-serif;
+  font-family: Lemon-Medium, sans-serif;
   box-sizing: border-box;
 }
 
@@ -66,6 +66,7 @@ body {
   --orange: #f27121;
   --newBlue: rgba(4, 0, 255, 0.150);
   --white: #E3E3E3;
+  --black: #0C0C0C;
   --text-gradient: linear-gradient(to right, #8a2387, #e94057, #f27121);
   --media-large: 1200px;
   --media-medium: 900px;
@@ -135,6 +136,13 @@ body {
   background-color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+
+.underlineHoverColor:after {
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  border-radius: 1px;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .underlineHover:hover:after {

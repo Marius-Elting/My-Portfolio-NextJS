@@ -23,9 +23,7 @@ const Home: FC = (): ReactElement => {
         />
       </Head>
       <Welcome />
-
       <TechStack />
-      {/* @ts-ignore TODO */}
       <ProjectOverwiew />
     </main>
   );

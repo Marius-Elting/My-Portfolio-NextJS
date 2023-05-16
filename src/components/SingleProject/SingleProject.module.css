@@ -13,7 +13,6 @@
 
 .SingleProjectProjectWrapper img {
     height: 100%;
-    filter: drop-shadow(0px 0px 30px var(--background-color-one));
     overflow: hidden;
 }
 
@@ -22,8 +21,17 @@
 }
 
 .SingleProjectProjectWrapper h3 {
-    font-size: calc(var(--p-font-size)*2);
-    color: var(--text-color)
+    font-size: calc(var(--p-font-size)*5);
+    font-family: var(--font-family-p);
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 0 10px;
+    -webkit-text-fill-color: transparent;
+}
+
+.SingleProjectHoverDiv h4 {
+    color: #0C0C0C
 }
 
 .SingleProjectHoverDiv {
@@ -35,22 +43,26 @@
     transition: all 0.5s ease;
     font-size: var(--p-font-size);
     font-family: Poppins-SemiBold;
-    background-color: var(--background-color-three);
+    background-color: var(--white);
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px var(--background-color-three);
+    box-shadow: 0px 0px 10px var(--white);
 }
 
 .SingleProjectHoverDiv p {
     margin-top: 10px;
+    color: #0C0C0C
 }
 
 .SingleProjectHoverDiv a {
     display: inline-block;
     margin-top: 1rem;
-    font-size: calc(var(--a-font-size)*0.8);
-    font-family: var(--font-family-bold);
-    color: var(--text-color)
+    font-size: calc(var(--p-font-size)*0.8);
+    font-family: var(--font-family-p);
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .SingleProjectProjectWrapper img:hover+.SingleProjectHoverDiv,
@@ -59,11 +71,6 @@
     font-size: calc(var(--p-font-size)*1);
     color: var(--text-color);
     opacity: 1;
-}
-
-.SingleProjectProjectWrapper img:hover,
-.SingleProjectProjectWrapper img:has(+div:hover) {
-    filter: drop-shadow(0px 0px 75px var(--background-color-one));
 }
 
 .SingleProjectProjectWrapper .SingleProject-Footer {
@@ -76,46 +83,6 @@
     font-size: var(--a-font-size);
 }
 
-.SingleProjectProjectWrapper::before {
-    content: "{";
-    font-size: calc(var(--p-font-size)*10);
-    position: absolute;
-    top: -20px;
-    left: -70px;
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-four);
-    font-family: var(--font-family-p);
-    display: block;
-}
-
-.SingleProjectProjectWrapper::after {
-    font-size: calc(var(--p-font-size)*10);
-    position: absolute;
-    bottom: -100px;
-    right: -70px;
-    z-index: -1;
-    font-family: var(--font-family-p);
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-four);
-    display: block;
-}
-
-.SingleProjectProjectWrapper:not(:nth-last-child(1))::after {
-    content: "},";
-}
-
-.SingleProjectProjectWrapper:nth-last-child(1)::after {
-
-    content: "} ]";
-    right: -220px;
-}
-
-.SingleProjectProjectWrapper:nth-child(1)::before {
-    content: "[{";
-    left: -150px;
-}
 
 @media only screen and (max-width: 900px) {
     .SingleProjectProjectWrapper {

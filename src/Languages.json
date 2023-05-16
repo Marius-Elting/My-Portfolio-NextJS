@@ -26,7 +26,7 @@
         {
           "title": "PokéDex",
           "headline": "The PokéDex Project",
-          "description": "The PokéDex Project was a front-end only project.The project was carried out by a group of four people. We used ReactJS and CSS to develop the project. The data used in the PokéDex project was obtained from the Pokemon API.",
+          "description": "The PokéDex Project was a front-end only project. The project was carried out by a group of four people. We used ReactJS and CSS to develop the project. The data used in the PokéDex project was obtained from the Pokemon API.",
           "image": "PokeDexImage",
           "link": "https://yourtoponepokedex.netlify.app/",
           "stack": "#React #CSS #API"
@@ -34,7 +34,7 @@
         {
           "title": "Silent Moon",
           "headline": "The Silent Moon Project",
-          "description": "The Silent Moon Project was a big Full-Stack project.The project was carried out by a group of three people. We used ReactJS, Redux and SCSS for the frontend and NodeJS, ExpressJS and MongoDB for the backend. This website is mobile optimized only at the moment!",
+          "description": "The Silent Moon Project was a big Full-Stack project. The project was carried out by a group of three people. We used ReactJS, Redux and SCSS for the frontend and NodeJS, ExpressJS and MongoDB for the backend. This website is mobile optimized only at the moment!",
           "image": "SilentMoonImg",
           "link": "https://silentmoon.up.railway.app/",
           "stack": "#React #SCSS #Nodejs #Expressjs #Mongodb #Redux"

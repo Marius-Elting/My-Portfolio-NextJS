@@ -8,7 +8,6 @@
     margin-bottom: 0;
     position: relative;
     overflow-x: hidden;
-
 }
 
 #ProjectsOverviewWrapper .ProjectsOverviewProjectWrapper {
@@ -20,11 +19,18 @@
     column-gap: 10rem;
 }
 
+
 #ProjectsOverviewWrapper h2 {
-    font-size: calc(var(--p-font-size)*4);
-    color: var(--text-color);
-    display: inline-block;
+    font-size: calc(var(--p-font-size)*5);
+    font-family: var(--font-family-bold-italic);
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: relative;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: inline-block;
 }
 
 #ProjectsOverviewWrapper h3 {
@@ -44,34 +50,6 @@
     color: var(--text-color)
 }
 
-
-#ProjectsOverviewWrapper::before {
-    content: "const";
-    font-size: calc(var(--p-font-size)*5);
-    position: absolute;
-    top: 20px;
-    left: 50px;
-    z-index: -1;
-    font-family: var(--font-family-p);
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-four);
-    display: block;
-}
-
-#ProjectsOverviewWrapper>article h2::after {
-    content: "=";
-    font-size: calc(var(--p-font-size)*5);
-    position: absolute;
-    top: -10px;
-    right: -130px;
-    z-index: -1;
-    font-family: var(--font-family-p);
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-four);
-    display: block;
-}
 
 @media only screen and (max-width: 900px) {
 

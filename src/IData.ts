@@ -1,10 +1,16 @@
-interface IProject {
+export interface ISingleProject {
     title: string
     headline: string
     description: string
     image: string
     link: string
     stack: string
+}
+
+export interface IProjects {
+    headline: string
+    showmore: string
+    ProjectData: Array<ISingleProject>
 }
 
 export interface IHeaderData {
@@ -23,11 +29,7 @@ export interface IdataSingle {
         Headlinesub1: string
         Headlinesub2: string
     },
-    Projects: {
-        headline: string
-        showmore: string
-        ProjectData: Array<IProject>
-    },
+    Projects: IProjects
     AboutMe: {
         AllHeadline: string
         MyPastHeadline: string
