@@ -4,17 +4,17 @@
      width: 65px;
      padding: 10px;
      transition: all .3s linear;
-     fill: var(--text-color);
+     fill: var(--purple);
      white-space: normal;
  }
 
 
  .icons:hover {
-     fill: var(--background-color-one);
+     fill: var(--red);
      cursor: pointer
  }
 
  .ThisIsMe-LogoWrapper:hover .icons {
-     fill: var(--background-color-one);
+     fill: var(--red);
      cursor: pointer
  }
