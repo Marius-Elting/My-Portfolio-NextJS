@@ -33,11 +33,6 @@
     display: inline-block;
 }
 
-#ProjectsOverviewWrapper h3 {
-    font-size: calc(var(--p-font-size)*2);
-    color: var(--text-color)
-}
-
 
 #ProjectsOverviewWrapper .ProjectsOverviewFooter {
     display: flex;
@@ -47,15 +42,5 @@
 
 #ProjectsOverviewWrapper .ProjectsOverviewFooter a {
     font-size: var(--a-font-size);
-    color: var(--text-color)
-}
-
-
-@media only screen and (max-width: 900px) {
-
-    #ProjectsOverviewWrapper>article h2::before,
-    #ProjectsOverviewWrapper>article h2::after,
-    #ProjectsOverviewWrapper::before {
-        display: none;
-    }
+    color: var(--white)
 }

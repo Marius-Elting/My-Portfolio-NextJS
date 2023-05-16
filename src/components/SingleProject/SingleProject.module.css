@@ -21,7 +21,7 @@
 }
 
 .SingleProjectProjectWrapper h3 {
-    font-size: calc(var(--p-font-size)*5);
+    font-size: calc(var(--p-font-size)*2);
     font-family: var(--font-family-p);
     background: var(--text-gradient);
     -webkit-background-clip: text;
@@ -42,7 +42,6 @@
     user-select: none;
     transition: all 0.5s ease;
     font-size: var(--p-font-size);
-    font-family: Poppins-SemiBold;
     background-color: var(--white);
     padding: 10px;
     border-radius: 20px;
@@ -57,7 +56,7 @@
 .SingleProjectHoverDiv a {
     display: inline-block;
     margin-top: 1rem;
-    font-size: calc(var(--p-font-size)*0.8);
+    font-size: calc(var(--p-font-size));
     font-family: var(--font-family-p);
     background: var(--text-gradient);
     -webkit-background-clip: text;
