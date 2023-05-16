@@ -30,7 +30,6 @@ const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
 
   const router = useRouter();
   const path = router.pathname;
-  console.log(path === "/aboutme");
   if (!Header) {
     return <></>;
   }

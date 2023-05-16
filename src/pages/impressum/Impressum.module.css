@@ -10,8 +10,6 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* font-size: calc(var(--p-font-size)*5); */
-    /* color: var(--text-color); */
 }
 
 .ImpressumWrapper p,

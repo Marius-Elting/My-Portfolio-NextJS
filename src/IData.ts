@@ -26,6 +26,21 @@ export interface IPrivacy {
 }
 
 
+export interface IContact {
+    Headline: string
+    YName: string
+    YEmail: string
+    YSubject: string
+    YMessage: string
+    Acceptpolicy: string
+    Infopolicy: string
+    policyLink: string
+    button: string
+    nameError: string
+    emailError: string
+}
+
+
 export interface IdataSingle {
 
     Header: IHeaderData
@@ -42,19 +57,7 @@ export interface IdataSingle {
         TheBootcampHeadline: string
         TheBootcamp: string
     },
-    ContactMe: {
-        Headline: string
-        YName: string
-        YEmail: string
-        YSubject: string
-        YMessage: string
-        Acceptpolicy: string
-        Infopolicy: string
-        policyLink: string
-        button: string
-        nameError: string
-        emailError: string
-    },
+    ContactMe: IContact,
     Privacy: IPrivacy,
     Other: {
         contactButton: string
