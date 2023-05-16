@@ -52,7 +52,7 @@
     text-decoration: underline;
 }
 
-#NavWrapper ul li span.active {
+#NavWrapper ul li .active {
     background: var(--text-gradient);
     -webkit-background-clip: text;
     background-clip: text;

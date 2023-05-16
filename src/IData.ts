@@ -20,6 +20,11 @@ export interface IHeaderData {
     contact: string
 }
 
+export interface IPrivacy {
+    Headline: string
+    Text: string
+}
+
 
 export interface IdataSingle {
 
@@ -50,10 +55,7 @@ export interface IdataSingle {
         nameError: string
         emailError: string
     },
-    Privacy: {
-        Headline: string
-        Text: string
-    },
+    Privacy: IPrivacy,
     Other: {
         contactButton: string
         downloadCV: string

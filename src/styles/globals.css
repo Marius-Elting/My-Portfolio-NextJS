@@ -142,7 +142,11 @@ body {
   background: linear-gradient(to right, #8a2387, #e94057, #f27121);
   border-radius: 1px;
   -webkit-text-fill-color: transparent;
+}
 
+.underlineHoverBlack:after {
+  background: #0C0C0C;
+  border-radius: 1px;
 }
 
 .underlineHover:hover:after {

@@ -7,6 +7,8 @@
     flex-direction: column;
     gap: 3rem;
     overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 #AllProjectsWrapper article {
@@ -16,14 +18,16 @@
     flex-wrap: wrap;
     row-gap: 7rem;
     column-gap: 10rem;
-
 }
 
 #AllProjectsWrapper h1 {
-    font-size: calc(var(--p-font-size)*4);
-    color: var(--text-color);
-    display: inline-block;
-    position: relative;
+    font-size: calc(var(--p-font-size)*5);
+    font-family: var(--font-family-bold-italic);
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 10px;
 }
 
 #AllProjectsWrapper>div::before {

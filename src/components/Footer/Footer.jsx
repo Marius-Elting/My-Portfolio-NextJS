@@ -14,8 +14,8 @@ const Footer = () => {
     }
     return (
         <footer id={styles.FooterWrapper}>
-            <Link href="/impressum" className="underlineHover">Impressum</Link>
-            <Link href="/privatepolicy" className="underlineHover" > {lang === "English" ? "Private Policy" : "Datenschutz"
+            <Link href="/impressum" className="underlineHover underlineHoverBlack">Impressum</Link>
+            <Link href="/privatepolicy" className="underlineHover underlineHoverBlack" > {lang === "English" ? "Private Policy" : "Datenschutz"
             }</Link>
         </footer>
     )

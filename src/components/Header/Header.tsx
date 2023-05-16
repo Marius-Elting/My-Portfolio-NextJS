@@ -11,6 +11,7 @@ import {
   useRef,
   useState,
 } from "react";
+import { useRouter } from "next/router";
 
 interface IHeaderProps {
   setLang: Dispatch<SetStateAction<string>>;
@@ -27,6 +28,9 @@ const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
     setHeader(data[lang].Header);
   }, []);
 
+  const router = useRouter();
+  const path = router.pathname;
+  console.log(path === "/aboutme");
   if (!Header) {
     return <></>;
   }
@@ -53,7 +57,7 @@ const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
           <li>
             <Link
               onClick={navigated}
-              className="underlineHover"
+              className={`${path === "/" ? styles.active : ""} underlineHover`}
               href="/">
               {Header.home}
             </Link>
@@ -61,7 +65,9 @@ const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
           <li>
             <Link
               onClick={navigated}
-              className="underlineHover"
+              className={`${
+                path === "/allprojects" ? styles.active : ""
+              } underlineHover`}
               href="/allprojects">
               {Header.projects}
             </Link>
@@ -69,7 +75,9 @@ const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
           <li>
             <Link
               onClick={navigated}
-              className="underlineHover"
+              className={`${
+                path === "/aboutme" ? styles.active : ""
+              } underlineHover`}
               href="/aboutme">
               {Header.aboutMe}
             </Link>
@@ -77,7 +85,9 @@ const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
           <li>
             <Link
               onClick={navigated}
-              className="underlineHover"
+              className={`${
+                path === "/contactme" ? styles.active : ""
+              } underlineHover`}
               href="/contactme">
               {Header.contact}
             </Link>
