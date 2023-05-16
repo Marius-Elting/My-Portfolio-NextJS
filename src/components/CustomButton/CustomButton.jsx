@@ -6,7 +6,7 @@ function CustomButton({ children, linkTo, size }) {
         size = size * 1.5
     }
     return (<div className={styles.CustomButtonWrapper}>
-        <Link href={linkTo} className={"underlineHover"} >
+        <Link href={linkTo} className={"underlineHover underlineHoverColor"} >
             <p style={{
                 "fontSize": size || 20
             }}>{children}</p>

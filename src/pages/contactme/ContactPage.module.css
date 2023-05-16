@@ -125,4 +125,8 @@
         font-size: calc(var(--p-font-size)*2)
     }
 
+    .ContactPageWrapper h1 {
+        font-size: calc(var(--p-font-size)*3.5);
+    }
+
 }

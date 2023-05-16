@@ -58,7 +58,7 @@ background: linear-gradient(to right, red, orange);
 
 .ContactPageFormWrapper input,
 .ContactPageFormWrapper textarea {
-    width: 450px;
+
     padding: .5rem;
 
     font-size: calc(var(--p-font-size)*1.2);
@@ -73,8 +73,8 @@ background: linear-gradient(to right, red, orange);
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(to right, #f27121, #e94057, #8a2387, rgb(0, 0, 0, 0));
     border-image-slice: 1;
-    border-radius: 10px;
     width: 100%;
+    transition: .2s linear;
 }
 
 .ContactPageFormWrapper textarea {
@@ -115,9 +115,8 @@ background: linear-gradient(to right, red, orange);
     border-radius: 10px;
     border: none;
     align-self: center;
+    transition: .2s linear;
 }
-
-
 
 .ContactPageFormWrapper button:hover {
     cursor: pointer;
@@ -170,4 +169,80 @@ background: linear-gradient(to right, red, orange);
     box-shadow: none;
     width: auto;
     margin: 10px;
+}
+
+
+@media only screen and (max-width: 950px) {
+
+    .ContactPageWrapper {
+        flex-direction: column;
+        gap: 10rem
+    }
+
+    .ContactPageRightContainer,
+    .ContactPageLeftContainer {
+        width: 100%;
+    }
+
+    .ContactPageFormWrapper {
+        margin: 0;
+        width: 100%;
+    }
+
+    .ContactPageFormWrapper input,
+    .ContactPageFormWrapper textarea {
+        width: 95%;
+        font-size: calc(var(--p-font-size)*1.4)
+    }
+
+    .ContactPageFormWrapper .ContactPageacceptData label input {
+        height: 40px;
+        width: 40px;
+    }
+
+    .ContactPageFormWrapper .ContactPageacceptData label {
+        font-size: calc(var(--p-font-size)*1.4)
+    }
+
+    .ContactPageFormWrapper .ContactPageacceptData {
+        width: 95%;
+        font-size: calc(var(--p-font-size)*1.2)
+    }
+
+    .ContactPageFormWrapper .ContactPageacceptData p {
+        font-size: calc(var(--p-font-size)*1.2)
+    }
+
+    .ContactPageFormWrapper button {
+        font-size: calc(var(--p-font-size)*2.0);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .ContactPageFormWrapper input,
+    .ContactPageFormWrapper textarea {
+        font-size: calc(var(--p-font-size)*2)
+    }
+
+    .ContactPageFormWrapper .ContactPageacceptData {
+        width: 95%;
+        font-size: calc(var(--p-font-size)*1.8)
+    }
+
+    .ContactPageFormWrapper .ContactPageacceptData p {
+        font-size: calc(var(--p-font-size)*1.4)
+    }
+
+    .ContactPageFormWrapper button {
+        font-size: calc(var(--p-font-size)*2.5);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .ContactPageRightContainer a {
+        font-size: calc(var(--p-font-size)*2)
+    }
+
 }

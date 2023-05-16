@@ -50,7 +50,9 @@
 
 .SingleProjectHoverDiv p {
     margin-top: 10px;
-    color: #0C0C0C
+    color: #0C0C0C;
+    font-size: calc(var(--p-font-size)*1.1);
+    font-family: var(--font-family-mont);
 }
 
 .SingleProjectHoverDiv a {

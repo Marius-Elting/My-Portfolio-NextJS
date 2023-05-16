@@ -40,6 +40,19 @@ export interface IContact {
     emailError: string
 }
 
+export interface IOther {
+    contactButton: string
+    downloadCV: string
+}
+
+
+export interface IAboutMe {
+    AllHeadline: string
+    MyPastHeadline: string
+    MyPast: string
+    TheBootcampHeadline: string
+    TheBootcamp: string
+}
 
 export interface IdataSingle {
 
@@ -50,19 +63,10 @@ export interface IdataSingle {
         Headlinesub2: string
     },
     Projects: IProjects
-    AboutMe: {
-        AllHeadline: string
-        MyPastHeadline: string
-        MyPast: string
-        TheBootcampHeadline: string
-        TheBootcamp: string
-    },
+    AboutMe: IAboutMe,
     ContactMe: IContact,
     Privacy: IPrivacy,
-    Other: {
-        contactButton: string
-        downloadCV: string
-    }
+    Other: IOther
 }
 
 export interface IdataAll {
