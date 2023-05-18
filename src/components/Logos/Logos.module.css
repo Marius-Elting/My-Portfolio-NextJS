@@ -8,6 +8,11 @@
      white-space: normal;
  }
 
+ .headerIcon {
+     height: 50px;
+     width: 50px;
+ }
+
 
  .icons:hover {
      fill: var(--red);

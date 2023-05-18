@@ -1,8 +1,13 @@
 import { FC, ReactElement } from "react";
 import styles from "./Logos.module.css";
-export const GitHubLogo: FC = (): ReactElement => (
+
+interface LogoProps {
+  header?: boolean;
+}
+
+export const GitHubLogo: FC<LogoProps> = ({ header }): ReactElement => (
   <svg
-    className={styles.icons}
+    className={`${styles.icons} ${header ? styles.headerIcon : ""}`}
     width="800px"
     height="800px"
     viewBox="0 0 20 20"
