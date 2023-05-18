@@ -12,6 +12,7 @@ import {
   useState,
 } from "react";
 import { useRouter } from "next/router";
+import { GitHubLogo } from "../Logos/Logos";
 
 interface IHeaderProps {
   setLang: Dispatch<SetStateAction<string>>;
@@ -90,6 +91,16 @@ const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
               href="/contactme">
               {Header.contact}
             </Link>
+          </li>
+          <li>
+            <a
+              onClick={navigated}
+              className={`underlineHover`}
+              target="_blanck"
+              href="https://github.com/Marius-Elting">
+              {/* GitHub */}
+              <GitHubLogo header={true} />
+            </a>
           </li>
           <li>
             <span
