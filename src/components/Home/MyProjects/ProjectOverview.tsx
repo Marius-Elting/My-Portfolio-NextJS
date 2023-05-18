@@ -22,7 +22,7 @@ const ProjectOverwiew: FC = (): ReactElement => {
 
   return (
     <section id={styles.ProjectsOverviewWrapper}>
-      <h2>myProjects</h2>
+      <h2>my Projects</h2>
       <article className={styles.ProjectsOverviewProjectWrapper}>
         {Projects.ProjectData.slice(0, 3).map((project, index) => (
           <SingleProject
