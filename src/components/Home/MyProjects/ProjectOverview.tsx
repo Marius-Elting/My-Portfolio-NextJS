@@ -10,10 +10,12 @@ type Language = "English" | "German";
 
 const ProjectOverwiew: FC = (): ReactElement => {
   const [Projects, setProjects] = useState<IProjects>();
+  const [lang, setlang] = useState<Language>();
   const data: IdataAll = Data;
   useEffect(() => {
-    const lang: Language = sessionStorage.getItem("Language") as Language;
-    setProjects(data[lang].Projects);
+    const language: Language = sessionStorage.getItem("Language") as Language;
+    setlang(language);
+    setProjects(data[language].Projects);
   }, []);
 
   if (!Projects) {
@@ -22,7 +24,7 @@ const ProjectOverwiew: FC = (): ReactElement => {
 
   return (
     <section id={styles.ProjectsOverviewWrapper}>
-      <h2>my Projects</h2>
+      <h2>{lang === "English" ? "My Projects" : "Meine Projekte"}</h2>
       <article className={styles.ProjectsOverviewProjectWrapper}>
         {Projects.ProjectData.slice(0, 3).map((project, index) => (
           <SingleProject

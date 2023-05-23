@@ -14,7 +14,7 @@ const AllProjects: FC = (): ReactElement => {
 
   useEffect(() => {
     const lang: Language = sessionStorage.getItem("Language") as Language;
-    setProjects(data["English"].Projects);
+    setProjects(data[lang].Projects);
   }, []);
 
   if (!Projects) {

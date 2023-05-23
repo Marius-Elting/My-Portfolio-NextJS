@@ -20,7 +20,7 @@
           "headline": "The Movie Mania Project",
           "description": "The Movie Mania Project was a front-end project. It was a group project completed by a team of four people. The project was developed using ReactJS and CSS. In addition to the front-end work, I added a Google login feature and linked a database to the page so users could save their favorite movies. The data we used for the project was gathered from the MovieDB API",
           "image": "MovieManiaImage",
-          "link": "https://super-movie-mania.netlify.app/",
+          "link": "https://moviemania.mariuselting.dev/",
           "stack": "#React #CSS #API"
         },
         {
@@ -99,7 +99,7 @@
           "headline": "Das Movie Mania Projekt",
           "description": "Das Movie Mania Projekt war ein Front-End-Projekt. Es wurde von einem Team aus vier Personen abgeschlossen. Das Projekt wurde mit ReactJS entwickelt. Zusätzlich zur Front-End-Arbeit habe ich eine Google-Login-Funktion hinzugefügt und eine Datenbank mit der Seite verknüpft, damit Benutzer ihre Lieblingsfilme speichern können. Die für das Projekt verwendeten Daten wurden von der MovieDB API gesammelt.",
           "image": "MovieManiaImage",
-          "link": "https://super-movie-mania.netlify.app/",
+          "link": "https://moviemania.mariuselting.dev/",
           "stack": "#React #CSS #API"
         },
         {
