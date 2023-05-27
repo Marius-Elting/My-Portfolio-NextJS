@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from "react";
+import React, { FC, ReactElement, useEffect } from "react";
 import ProjectOverwiew from "../components/Home/MyProjects/ProjectOverview";
 import TechStack from "../components/Home/TechStack/TechStack";
 import Head from "next/head";
