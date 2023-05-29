@@ -29,13 +29,22 @@ import {
 
 import styles from "./TechStack.module.css";
 import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
 
 function TechStack() {
+  const [lang, setlang] = useState<"English" | "German">();
+  useEffect(() => {
+    const language: "English" | "German" = sessionStorage.getItem(
+      "Language"
+    ) as "English" | "German";
+    setlang(language);
+  }, []);
+
   return (
     <section
       id="TechStack"
       className={`${styles.TechStack}`}>
-      <h2>My Skills</h2>
+      <h2>{lang === "English" ? "My skills" : "Meine Skills"}</h2>
 
       <article className={`${styles.AllImgWrapper} ${styles.imgWrapper}`}>
         <div
