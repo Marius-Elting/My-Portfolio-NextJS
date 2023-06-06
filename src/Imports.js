@@ -13,5 +13,6 @@ export { default as SilentMoon } from "./img/SilentMoonImg.png"
 export { default as ReduxStroke } from "./img/svg/WhiteStrokeLogos/Redux.svg"
 export { default as FigmaStroke } from "./img/svg/WhiteStrokeLogos/Figma.svg"
 export { default as TSStroke } from "./img/svg/WhiteStrokeLogos/Typescript.svg"
+export { default as Portrait } from "./img/Portrait.jpg"
 export const aosDataProject = { "data-aos": "zoom-out", "data-aos-offset": "140" };
 export const aosDataTechStack = { "ata-aos": "zoom-out", "data-aos-easing": "ease-in-out" };
