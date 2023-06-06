@@ -66,6 +66,11 @@
     text-underline-offset: 5px;
 }
 
+.ContactPageRightContainer>article>a {
+    border: none;
+    text-decoration: none;
+}
+
 .ContactPageCopyButton {
     background-color: transparent;
     border: none;

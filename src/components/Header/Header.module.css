@@ -24,12 +24,14 @@
 #HeaderWrapper h1 {
     color: var(--white);
     background: var(--text-gradient);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .HeaderBurger {
     display: none;
+    margin-top: 10px;
 }
 
 #HeaderWrapper>.HeaderAcceptInfo {
