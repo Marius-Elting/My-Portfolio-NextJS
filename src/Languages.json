@@ -28,7 +28,7 @@
           "headline": "The PokéDex Project",
           "description": "The PokéDex Project was a front-end only project. The project was carried out by a group of four people. We used ReactJS and CSS to develop the project. The data used in the PokéDex project was obtained from the Pokemon API.",
           "image": "PokeDexImage",
-          "link": "https://yourtoponepokedex.netlify.app/",
+          "link": "https://pokedex.mariuselting.dev/",
           "stack": "#React #CSS #API"
         },
         {
@@ -36,7 +36,7 @@
           "headline": "The Silent Moon Project",
           "description": "The Silent Moon Project was a big Full-Stack project. The project was carried out by a group of three people. We used ReactJS, Redux and SCSS for the frontend and NodeJS, ExpressJS and MongoDB for the backend. This website is mobile optimized only at the moment!",
           "image": "SilentMoonImg",
-          "link": "https://silentmoon.up.railway.app/",
+          "link": "https://silentmoon.mariuselting.dev/",
           "stack": "#React #SCSS #Nodejs #Expressjs #Mongodb #Redux"
         },
         {
@@ -107,7 +107,7 @@
           "headline": "Das PokéDex Projekt",
           "description": "Das PokéDex Projekt war ein rein Front-End-Projekt. Das Projekt wurde von einer Gruppe von vier Personen durchgeführt. Wir haben ReactJS verwendet, um das Projekt zu entwickeln. Die im PokéDex-Projekt verwendeten Daten stammen von der Pokemon API.",
           "image": "PokeDexImage",
-          "link": "https://yourtoponepokedex.netlify.app/",
+          "link": "https://pokedex.mariuselting.dev/",
           "stack": "#React #CSS #API"
         },
         {
@@ -115,7 +115,7 @@
           "headline": "Das Silent Moon Projekt",
           "description": "Das Silent Moon Projekt war ein großes Full-Stack-Projekt, das von einer Gruppe von drei Personen durchgeführt wurde. Wir benutzten ReactJS, Redux und SCSS für das Frontend und NodeJS, ExpressJS und MongoDB für das Backend. Diese Website ist im Moment nur für mobile Geräte optimiert!",
           "image": "SilentMoonImg",
-          "link": "https://silentmoon.up.railway.app/",
+          "link": "https://silentmoon.mariuselting.dev/",
           "stack": "#React #SCSS #Nodejs #Expressjs #Mongodb #Redux"
         },
         {
