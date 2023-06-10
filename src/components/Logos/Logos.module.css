@@ -6,6 +6,7 @@
      transition: all .3s linear;
      fill: var(--purple);
      white-space: normal;
+     /* cursor: pointer; */
  }
 
  .headerIcon {
@@ -19,7 +20,7 @@
      cursor: pointer
  }
 
- .ThisIsMe-LogoWrapper:hover .icons {
+ *:hover>.icons {
      fill: var(--red);
      cursor: pointer
  }

@@ -16,7 +16,7 @@ const ProjectOverwiew: FC = (): ReactElement => {
     const language: Language = sessionStorage.getItem("Language") as Language;
     setlang(language);
     setProjects(data[language].Projects);
-  }, []);
+  }, [data]);
 
   if (!Projects) {
     return <></>;
