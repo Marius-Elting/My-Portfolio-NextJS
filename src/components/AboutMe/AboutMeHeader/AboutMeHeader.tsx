@@ -16,7 +16,7 @@ const AboutMeHeader: FC = (): ReactElement => {
     const lang: Language = sessionStorage.getItem("Language") as Language;
     setAboutMe(data[lang].AboutMe);
     setOther(data[lang].Other);
-  }, []);
+  }, [data]);
 
   if (!AboutMe || !Other) {
     return <></>;

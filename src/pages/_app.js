@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import '@/styles/globals.css'
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment, useCallback, useEffect, useState } from 'react'
 import Aos from "aos";
 import { useRouter } from 'next/navigation';
 
@@ -10,12 +10,12 @@ export default function App({ Component, pageProps }) {
 
   const [lang, setLang] = useState("English")
 
-  const changeLangHandler = (param) => {
+  const changeLangHandler = useCallback((param) => {
     console.log(param)
     setLang(param)
     sessionStorage.setItem("Language", param)
     router.refresh();
-  }
+  }, [router])
 
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }) {
     if (!sessionStorage.getItem("Language")) {
       changeLangHandler("English")
     }
-  }, []);
+  }, [changeLangHandler]);
 
 
   const scrollHandler = () => {

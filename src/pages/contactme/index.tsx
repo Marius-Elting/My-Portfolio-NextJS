@@ -1,9 +1,9 @@
 import styles from "./ContactPage.module.css";
-import { useEffect, ReactElement, FC } from "react";
+import { ReactElement, FC } from "react";
 import MyPicture from "../../components/Picture/Picture";
 import Head from "next/head";
 import Data from "../../Languages.json";
-import { GitHubLogo, LinkedInLogo } from "@/components/Logos/Logos";
+import { GitHubLogo2, LinkedInLogo } from "@/components/Logos/Logos";
 import { IdataAll } from "@/IData";
 import ContactForm from "@/components/ContactForm/ContactForm";
 
@@ -44,7 +44,7 @@ const ContactPage: FC = (): ReactElement => {
             target="_blanck"
             href="https://github.com/Marius-Elting">
             {" "}
-            <GitHubLogo />
+            <GitHubLogo2 />
           </a>
         </article>
         <article>

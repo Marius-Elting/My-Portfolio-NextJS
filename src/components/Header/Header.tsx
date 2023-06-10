@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
 import Data from "../../Languages.json";
-import { IHeaderData, IdataAll, IdataSingle } from "@/IData";
+import { IHeaderData, IdataAll } from "@/IData";
 import {
   Dispatch,
   FC,
@@ -12,7 +12,7 @@ import {
   useState,
 } from "react";
 import { useRouter } from "next/router";
-import { GitHubLogo } from "../Logos/Logos";
+import { GitHubLogo2 } from "../Logos/Logos";
 
 interface IHeaderProps {
   setLang: Dispatch<SetStateAction<string>>;
@@ -27,7 +27,7 @@ const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
   useEffect(() => {
     const lang: Language = sessionStorage.getItem("Language") as Language;
     setHeader(data[lang].Header);
-  }, []);
+  }, [data]);
 
   const router = useRouter();
   const path = router.pathname;
@@ -99,7 +99,7 @@ const Header: FC<IHeaderProps> = ({ setLang, lang }): ReactElement => {
               target="_blanck"
               href="https://github.com/Marius-Elting">
               {/* GitHub */}
-              <GitHubLogo header={true} />
+              <GitHubLogo2 header={true} />
             </a>
           </li>
           <li>

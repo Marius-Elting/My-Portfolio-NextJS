@@ -32,7 +32,7 @@ const ContactForm: FC = (): ReactElement => {
   useEffect(() => {
     const lang: Language = sessionStorage.getItem("Language") as Language;
     setContactMe(data[lang].ContactMe);
-  }, []);
+  }, [data]);
 
   if (!ContactMe) {
     return <></>;
