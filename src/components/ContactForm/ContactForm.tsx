@@ -71,7 +71,7 @@ const ContactForm: FC = (): ReactElement => {
       return;
     }
     const form = new FormData(e.target);
-    fetch(`${process.env.REACT_APP_URL}/contactme`, {
+    fetch(`${process.env.NEXT_PUBLIC_URL}/contactme`, {
       method: "POST",
       body: form,
     })
