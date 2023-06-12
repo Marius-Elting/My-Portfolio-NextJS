@@ -93,6 +93,7 @@ background: linear-gradient(to right, red, orange);
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(to right, #8a2387, #e94057, #f27121, rgb(0, 0, 0, 0));
     border-image-slice: 1;
+    font-family: var(--font-family-mont);
     border-radius: 10px;
     width: 100%;
 }
