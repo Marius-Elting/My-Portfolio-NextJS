@@ -94,6 +94,7 @@ background: linear-gradient(to right, red, orange);
     border-image: linear-gradient(to right, #8a2387, #e94057, #f27121, rgb(0, 0, 0, 0));
     border-image-slice: 1;
     font-family: var(--font-family-mont);
+    font-variation-settings: "wght" 700;
     border-radius: 10px;
     width: 100%;
 }
