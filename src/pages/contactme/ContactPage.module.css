@@ -71,6 +71,14 @@
     text-decoration: none;
 }
 
+.ContactPageRightContainer article:nth-last-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
 .ContactPageCopyButton {
     background-color: transparent;
     border: none;

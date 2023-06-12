@@ -66,8 +66,8 @@
       "Infopolicy": "By submitting this request, you acknowledge that you have read the",
       "policyLink": "Private Policy",
       "button": "Send",
-      "nameError": "Names can not contain numbers.",
-      "emailError": "Please enter a valid E-Mail."
+      "nameError": "Name must be specified and must not contain numbers",
+      "emailError": "Please enter a valid E-Mail"
     },
     "Privacy": {
       "Headline": "Privacy",
@@ -145,7 +145,7 @@
       "Infopolicy": "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die",
       "policyLink": "Datenschutzerklärung",
       "button": "Senden",
-      "nameError": "Namen dürfen keine Zahlen enthalten",
+      "nameError": "Name muss angegeben sein und darf keine Zahlen enthalten",
       "emailError": "Bitte gib eine korrekte E-Mail ein!"
     },
     "Privacy": {
