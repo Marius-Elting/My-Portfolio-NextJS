@@ -61,11 +61,11 @@ background: linear-gradient(to right, red, orange);
 
 .ContactPageFormWrapper input,
 .ContactPageFormWrapper textarea {
-
     padding: .5rem;
-
     font-size: calc(var(--p-font-size)*1.2);
-    font-family: var(--font-family-p-italic);
+    font-family: var(--font-family-mont);
+    font-style: italic;
+    font-variation-settings: "wght" 700;
     color: var(--white);
     /* box-shadow: 0px 0px 20px var(--background-color-one); */
     border-radius: 10px;
@@ -93,8 +93,6 @@ background: linear-gradient(to right, red, orange);
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(to right, #8a2387, #e94057, #f27121, rgb(0, 0, 0, 0));
     border-image-slice: 1;
-    font-family: var(--font-family-mont);
-    font-variation-settings: "wght" 700;
     border-radius: 10px;
     width: 100%;
 }
