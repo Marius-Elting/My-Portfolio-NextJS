@@ -1,5 +1,4 @@
 import { FC, ReactElement } from "react";
-import { PlaceHolderPic } from "../../Imports";
 import { Portrait } from "../../Imports";
 import styles from "./Picture.module.css";
 import Image from "next/image";

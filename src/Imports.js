@@ -10,7 +10,6 @@ export { default as FigmaStroke } from "./img/svg/WhiteStrokeLogos/Figma.svg"
 export { default as SpringStroke } from "./img/svg/WhiteStrokeLogos/Spring.svg"
 export { default as JavaStroke } from "./img/svg/WhiteStrokeLogos/Java.svg"
 
-export { default as PlaceHolderPic } from "./img/Placeholder.png";
 export { default as MovieMania1 } from "./img/MovieMania1.webp";
 export { default as PokeDex } from "./img/PokeDex.webp";
 export { default as WeatherApp } from "./img/WeatherApp.png";
