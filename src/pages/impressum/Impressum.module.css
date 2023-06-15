@@ -22,3 +22,15 @@
     text-decoration: underline;
     display: block;
 }
+
+@media screen and (max-width: 900px) {
+
+    .ImpressumWrapper p,
+    .ImpressumWrapper a {
+        font-size: calc(var(--p-font-size)*1.1);
+    }
+
+    .ImpressumWrapper a {
+        margin-top: 30px;
+    }
+}
