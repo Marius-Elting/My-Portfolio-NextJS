@@ -51,10 +51,16 @@
     },
     "AboutMe": {
       "AllHeadline": "About Me",
-      "MyPastHeadline": "My Past",
-      "MyPast": "After graduating from secondary school in 2018, I began training as an e-commerce merchant and successfully completed the program in 2021. I then worked for a year at the training company before seeking a new challenge. I discovered SuperCode's Full Stack Bootcamp and, after attending a workshop and researching further, I decided to enroll in the program.\nYou can read more about my experiences at the bootcamp in the article The Bootcamp.",
-      "TheBootcampHeadline": "The Bootcamp",
-      "TheBootcamp": "The bootcamp started on September 19, 2022 and ended on February 23, 2023. From the beginning, I stood out to the other participants and was able to learn quickly. I have a strong understanding of reading and writing code. Within my group, I am one of the top performers and can explain and help code to the other participants. I use my free time to further develop my front-end and back-end skills."
+      "Info": [
+        {
+          "Headline": "My Past",
+          "Body": "After graduating from secondary school in 2018, I began training as an e-commerce merchant and successfully completed the program in 2021. I then worked for a year at the training company before seeking a new challenge. I discovered SuperCode's Full Stack Bootcamp and, after attending a workshop and researching further, I decided to enroll in the program.\nYou can read more about my experiences at the bootcamp in the article The Bootcamp."
+        },
+        {
+          "Headline": "The Bootcamp",
+          "Body": "The bootcamp started on September 19, 2022 and ended on February 23, 2023. From the beginning, I stood out to the other participants and was able to learn quickly. I have a strong understanding of reading and writing code. Within my group, I am one of the top performers and can explain and help code to the other participants. I use my free time to further develop my front-end and back-end skills."
+        }
+      ]
     },
     "ContactMe": {
       "Headline": "Contact Me",
@@ -130,10 +136,16 @@
     },
     "AboutMe": {
       "AllHeadline": "Über Mich",
-      "MyPastHeadline": "Meine Vergangenheit",
-      "MyPast": "Nach dem Abschluss der Realschule im Jahr 2018 habe ich eine Ausbildung zum Kaufmann im E-Commerce begonnen und diese im Jahr 2021 erfolgreich abgeschlossen. Ich arbeitete dann ein Jahr lang bei dem Ausbildungsunternehmen, bevor ich eine neue Herausforderung suchte. Ich entdeckte SuperCode's Full Stack Bootcamp und entschied mich nach Teilnahme an einem Workshop und weiteren Recherchen, für das Bootcamp bei SuperCode.\nDu kannst mehr über meine Erfahrungen im Bootcamp in dem Artikel 'Das Bootcamp' lesen.",
-      "TheBootcampHeadline": "Das Bootcamp",
-      "TheBootcamp": "Das Bootcamp begann am 19. September 2022 und endete am 23. Februar 2023. Von Beginn an stach ich gegenüber den anderen Teilnehmern heraus. Ich habe ein starkes Verständnis dafür, Code zu lesen und zu schreiben. Innerhalb meiner Gruppe war ich einer der Top-Performer und konnte den anderen Teilnehmern Code erklären und weiterhelfen. Ich nutze meine Freizeit, um meine Fähigkeiten im Bereich Front- und Backend weiter zu entwickeln."
+      "Info": [
+        {
+          "Headline": "Meine Vergangenheit",
+          "Body": "Nach dem Abschluss der Realschule im Jahr 2018 habe ich eine Ausbildung zum Kaufmann im E-Commerce begonnen und diese im Jahr 2021 erfolgreich abgeschlossen. Ich arbeitete dann ein Jahr lang bei dem Ausbildungsunternehmen, bevor ich eine neue Herausforderung suchte. Ich entdeckte SuperCode's Full Stack Bootcamp und entschied mich nach Teilnahme an einem Workshop und weiteren Recherchen, für das Bootcamp bei SuperCode.\nDu kannst mehr über meine Erfahrungen im Bootcamp in dem Artikel 'Das Bootcamp' lesen."
+        },
+        {
+          "Headline": "Das Bootcamp",
+          "Body": "Das Bootcamp begann am 19. September 2022 und endete am 23. Februar 2023. Von Beginn an stach ich gegenüber den anderen Teilnehmern heraus. Ich habe ein starkes Verständnis dafür, Code zu lesen und zu schreiben. Innerhalb meiner Gruppe war ich einer der Top-Performer und konnte den anderen Teilnehmern Code erklären und weiterhelfen. Ich nutze meine Freizeit, um meine Fähigkeiten im Bereich Front- und Backend weiter zu entwickeln."
+        }
+      ]
     },
     "ContactMe": {
       "Headline": "Kontaktier Mich",

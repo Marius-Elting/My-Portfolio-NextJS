@@ -45,13 +45,15 @@ export interface IOther {
     downloadCV: string
 }
 
+export interface IInfo {
+    Headline: string
+    Body: string
+}
+
 
 export interface IAboutMe {
     AllHeadline: string
-    MyPastHeadline: string
-    MyPast: string
-    TheBootcampHeadline: string
-    TheBootcamp: string
+    Info: IInfo[]
 }
 
 export interface IdataSingle {
