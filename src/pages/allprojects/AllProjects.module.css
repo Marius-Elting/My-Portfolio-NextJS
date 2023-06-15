@@ -30,36 +30,6 @@
     padding: 0 10px;
 }
 
-#AllProjectsWrapper>div::before {
-    content: "const";
-    font-size: calc(var(--p-font-size)*5);
-    position: absolute;
-    top: 20px;
-    left: 50px;
-    z-index: -1;
-    font-family: var(--font-family-p);
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-four);
-    display: block;
-}
-
-#AllProjectsWrapper>div h1::after {
-    content: "=";
-    font-size: calc(var(--p-font-size)*5);
-    position: absolute;
-    top: -10px;
-    right: -70px;
-    z-index: -1;
-    font-family: var(--font-family-p);
-    text-shadow: 0px 0px 5px var(--background-color-one);
-    opacity: .5;
-    color: var(--background-color-four);
-    display: block;
-
-
-}
-
 @media only screen and (max-width: 900px) {
 
     #AllProjectsWrapper>div h1::after,

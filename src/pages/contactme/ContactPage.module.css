@@ -16,8 +16,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-
-
 .icons {
     font-size: 70px;
     color: var(--text-color);
@@ -46,18 +44,6 @@
     width: 50%;
     justify-content: center;
 }
-
-/* 
-.ContactPageRightContainer h3 {
-
-    color: var(--text-color);
-    font-size: calc(var(--p-font-size)*2)
-}
-
-.ContactPageRightContainer h4 {
-    color: var(--white);
-    font-size: calc(var(--p-font-size)*1.5)
-} */
 
 .ContactPageRightContainer a {
     color: var(--white);
@@ -91,13 +77,6 @@
 .ContactPageCopyButton:hover {
     cursor: pointer;
 }
-
-/* .ContactPageLogoWrapper:hover svg> {
-    fill: var(--background-color-one);
-    cursor: pointer
-} */
-
-
 
 @media only screen and (max-width: 950px) {
 
@@ -141,5 +120,4 @@
     .ContactPageWrapper h1 {
         font-size: calc(var(--p-font-size)*3.5);
     }
-
 }

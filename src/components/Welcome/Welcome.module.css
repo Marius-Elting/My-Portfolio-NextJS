@@ -24,7 +24,6 @@
 }
 
 .WelcomeWrapper h2 {
-    /* background: linear-gradient(180deg, #FF00CE, #333399); */
     background: var(--text-gradient);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -45,7 +44,6 @@
     -webkit-text-fill-color: #0C0C0C;
     color: #0C0C0C;
 }
-
 
 @media only screen and (max-width: 1200px) {
     .WelcomeWrapper {

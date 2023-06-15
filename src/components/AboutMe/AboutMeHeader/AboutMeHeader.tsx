@@ -3,8 +3,8 @@ import styles from "./AboutMeHeader.module.css";
 import MyPicture from "../../Picture/Picture";
 // import CV from "../../../assets/Marius_Elting_Lebenslauf.pdf"
 import Data from "../../../Languages.json";
-import { FC, ReactElement, useEffect, useState } from "react";
-import { IAboutMe, IOther, IdataAll } from "@/IData";
+import { FC, Key, ReactElement, useEffect, useState } from "react";
+import { IAboutMe, IInfo, IOther, IdataAll } from "@/IData";
 
 type Language = "English" | "German";
 
@@ -25,23 +25,17 @@ const AboutMeHeader: FC = (): ReactElement => {
     <section id={styles.AboutMeHeaderWrapper}>
       <section id={styles.AboutMeHeaderLeftContainer}>
         <h1>{AboutMe.AllHeadline}</h1>
-        <article id={styles.AboutMeHeaderInfoWrapperOne}>
-          <h2>{AboutMe.MyPastHeadline}</h2>
-          <p className={styles.AboutMeHeaderDetailText}>{AboutMe.MyPast}</p>
-          <input
-            type="checkbox"
-            className={styles.seeMore}></input>
-        </article>
-        <article id={styles.AboutMeHeaderInfoWrapperTwo}>
-          <h2>{AboutMe.TheBootcampHeadline}</h2>
-          <p className={styles.AboutMeHeaderDetailText}>
-            {" "}
-            {AboutMe.TheBootcamp}
-          </p>
-          <input
-            type="checkbox"
-            className={styles.seeMore}></input>
-        </article>
+        {AboutMe.Info.map((item: IInfo, i: Key) => (
+          <article
+            key={i}
+            id={styles.AboutMeHeaderInfoWrapperOne}>
+            <h2>{item.Headline}</h2>
+            <p className={styles.AboutMeHeaderDetailText}>{item.Body}</p>
+            <input
+              type="checkbox"
+              className={styles.seeMore}></input>
+          </article>
+        ))}
       </section>
       <section id={styles.AboutMeHeaderRightContainer}>
         <MyPicture />

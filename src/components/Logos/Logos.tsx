@@ -14,9 +14,6 @@ export const GitHubLogo2: FC<LogoProps> = ({ header }): ReactElement => (
     width="98"
     height="96">
     <title>github-mark-svg</title>
-    {/* <style>
-		.s0 { fill: #24292f } 
-	</style> */}
     <path
       id="Layer"
       fillRule="evenodd"

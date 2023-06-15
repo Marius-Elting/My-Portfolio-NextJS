@@ -1,4 +1,3 @@
-import styles from "./AboutMe.module.css";
 import AboutMeHeader from "../../components/AboutMe/AboutMeHeader/AboutMeHeader";
 
 import Head from "next/head";
