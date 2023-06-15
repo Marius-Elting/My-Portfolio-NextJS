@@ -9,22 +9,22 @@
     gap: 1rem;
 }
 
-#ErrorPageMainWrapper h1 {
+#ErrorPageMainWrapper h1,
+#ErrorPageMainWrapper p {
     background: var(--text-gradient);
-    font-family: var(--font-family-bold-italic);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#ErrorPageMainWrapper h1 {
+    font-family: var(--font-family-bold-italic);
     font-size: calc(var(--p-font-size)*13);
 }
 
 #ErrorPageMainWrapper p {
     color: var(--white);
-    background: var(--text-gradient);
     font-family: var(--font-family-bold);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 #ErrorPageMainWrapper a {

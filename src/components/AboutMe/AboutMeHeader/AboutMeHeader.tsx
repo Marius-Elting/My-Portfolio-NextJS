@@ -36,17 +36,6 @@ const AboutMeHeader: FC = (): ReactElement => {
               className={styles.seeMore}></input>
           </article>
         ))}
-
-        {/* <article id={styles.AboutMeHeaderInfoWrapperTwo}>
-          <h2>{AboutMe.TheBootcampHeadline}</h2>
-          <p className={styles.AboutMeHeaderDetailText}>
-            {" "}
-            {AboutMe.TheBootcamp}
-          </p>
-          <input
-            type="checkbox"
-            className={styles.seeMore}></input>
-        </article> */}
       </section>
       <section id={styles.AboutMeHeaderRightContainer}>
         <MyPicture />

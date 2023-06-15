@@ -74,7 +74,6 @@
 
 .seeMore {
     color: var(--black);
-    /* font-family: var(--font-family-p-italic); */
     background-color: transparent;
     outline: none;
     border: none;
@@ -164,7 +163,6 @@
         font-size: calc(var(--p-font-size)*1.4);
     }
 }
-
 
 @media only screen and (max-width: 500px) {
 

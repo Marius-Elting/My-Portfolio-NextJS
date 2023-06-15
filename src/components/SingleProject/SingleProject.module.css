@@ -84,7 +84,6 @@
     font-size: var(--a-font-size);
 }
 
-
 @media only screen and (max-width: 900px) {
     .SingleProjectProjectWrapper {
         width: 300px;

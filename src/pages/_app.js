@@ -19,26 +19,12 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     Aos.init({ duration: 1000 });
-    window.addEventListener('scroll', scrollHandler, { passive: true });
     setLang(sessionStorage.getItem("Language"))
     if (!sessionStorage.getItem("Language")) {
       changeLangHandler("English")
     }
   }, [changeLangHandler]);
 
-
-  const scrollHandler = () => {
-    const scrollpos = window.pageYOffset;
-    const body = document.getElementsByTagName("body")[0];
-    const scrollButton = document.querySelector(".scrolldown");
-    body.style.transition = " all .6s linear";
-    if (scrollButton) {
-      if (scrollpos >= 50) scrollButton.style.opacity = "0";
-      else {
-        scrollButton.style.opacity = "1";
-      }
-    }
-  };
   return <Fragment>
     <Header lang={lang} setLang={changeLangHandler} />
     <Component {...pageProps} />

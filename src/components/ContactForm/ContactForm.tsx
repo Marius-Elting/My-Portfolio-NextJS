@@ -132,8 +132,6 @@ const ContactForm: FC = (): ReactElement => {
           }}>
           {ContactMe.nameError}
         </p>
-        {/* <label htmlFor="yourmail">{ContactMe.YEmail}</label> */}
-
         <input
           id="yourmail"
           onChange={(e) => isValidEmailAddress(e.target.value)}
@@ -156,7 +154,6 @@ const ContactForm: FC = (): ReactElement => {
           }}>
           {ContactMe.emailError}
         </p>
-        {/* <label htmlFor="yourSubject">{ContactMe.YSubject}</label> */}
         <input
           id="yourSubject"
           onChange={(e) => {
@@ -170,7 +167,6 @@ const ContactForm: FC = (): ReactElement => {
           type="text"
           name="subject"
           placeholder={ContactMe.YSubject}></input>
-        {/* <label htmlFor="yourMessage">{ContactMe.YMessage}</label> */}
         <textarea
           id="yourMessage"
           onChange={(e) => {
@@ -198,7 +194,6 @@ const ContactForm: FC = (): ReactElement => {
             {lang === "German" ? "gelesen haben." : ""}
           </p>
         </div>
-        {/* <CustomButton type={"submit"} size={25} linkHref="/contactme">Send</CustomButton> */}
         <div className={styles.ContactPageSendButtonWrapper}>
           <button
             disabled={isLoading === "loading" ? true : false}
